@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		833B215D1D2E98D2009C8087 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 833B215C1D2E98D2009C8087 /* Classes */; };
+		833B21801D2E9AA7009C8087 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B21611D2E9AA7009C8087 /* NSArray+Log.m */; };
+		833B21811D2E9AA7009C8087 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B21631D2E9AA7009C8087 /* NSDictionary+Log.m */; };
+		833B21821D2E9AA7009C8087 /* NSString+CDHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B21661D2E9AA7009C8087 /* NSString+CDHExtension.m */; };
+		833B21861D2E9AA7009C8087 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B216F1D2E9AA7009C8087 /* UIColor+Hex.m */; };
+		833B21871D2E9AA7009C8087 /* UIImage+CDHResizingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B21721D2E9AA7009C8087 /* UIImage+CDHResizingImage.m */; };
+		833B21881D2E9AA7009C8087 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B21741D2E9AA7009C8087 /* UIImage+Image.m */; };
+		833B21891D2E9AA7009C8087 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B21771D2E9AA7009C8087 /* UIView+Frame.m */; };
+		833B218A1D2E9AA7009C8087 /* EncryptionTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B217A1D2E9AA7009C8087 /* EncryptionTools.m */; };
+		833B218B1D2E9AA7009C8087 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B217C1D2E9AA7009C8087 /* NSString+Hash.m */; };
+		833B218C1D2E9AA7009C8087 /* RSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B217E1D2E9AA7009C8087 /* RSACryptor.m */; };
+		833B21F51D2EB988009C8087 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B21F41D2EB988009C8087 /* main.m */; };
+		833B22051D2EBA38009C8087 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B22041D2EBA38009C8087 /* ViewController.m */; };
+		833B22081D2EBA79009C8087 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B22071D2EBA79009C8087 /* AppDelegate.m */; };
 		834D61D01D2DFFA500E864E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 834D61CF1D2DFFA500E864E5 /* main.m */; };
 		834D61D91D2DFFA600E864E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61D71D2DFFA600E864E5 /* Main.storyboard */; };
 		834D61DB1D2DFFA600E864E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DA1D2DFFA600E864E5 /* Assets.xcassets */; };
@@ -15,7 +27,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		833B215C1D2E98D2009C8087 /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
+		833B21611D2E9AA7009C8087 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		833B21631D2E9AA7009C8087 /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
+		833B21651D2E9AA7009C8087 /* NSString+CDHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CDHExtension.h"; sourceTree = "<group>"; };
+		833B21661D2E9AA7009C8087 /* NSString+CDHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CDHExtension.m"; sourceTree = "<group>"; };
+		833B216E1D2E9AA7009C8087 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		833B216F1D2E9AA7009C8087 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		833B21711D2E9AA7009C8087 /* UIImage+CDHResizingImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CDHResizingImage.h"; sourceTree = "<group>"; };
+		833B21721D2E9AA7009C8087 /* UIImage+CDHResizingImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CDHResizingImage.m"; sourceTree = "<group>"; };
+		833B21731D2E9AA7009C8087 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		833B21741D2E9AA7009C8087 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		833B21761D2E9AA7009C8087 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		833B21771D2E9AA7009C8087 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		833B21791D2E9AA7009C8087 /* EncryptionTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptionTools.h; sourceTree = "<group>"; };
+		833B217A1D2E9AA7009C8087 /* EncryptionTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptionTools.m; sourceTree = "<group>"; };
+		833B217B1D2E9AA7009C8087 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		833B217C1D2E9AA7009C8087 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		833B217D1D2E9AA7009C8087 /* RSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSACryptor.h; sourceTree = "<group>"; };
+		833B217E1D2E9AA7009C8087 /* RSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSACryptor.m; sourceTree = "<group>"; };
+		833B21F41D2EB988009C8087 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		833B22031D2EBA38009C8087 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		833B22041D2EBA38009C8087 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		833B22061D2EBA79009C8087 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		833B22071D2EBA79009C8087 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		834D61CB1D2DFFA500E864E5 /* ToolsClasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsClasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834D61CF1D2DFFA500E864E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		834D61D81D2DFFA600E864E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,6 +69,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		833B215F1D2E9AA7009C8087 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				833B22021D2EBA1C009C8087 /* Main */,
+				833B21601D2E9AA7009C8087 /* NSArray */,
+				833B21621D2E9AA7009C8087 /* NSDictionary */,
+				833B21641D2E9AA7009C8087 /* NSString */,
+				833B21671D2E9AA7009C8087 /* Others */,
+				833B216D1D2E9AA7009C8087 /* UIColor */,
+				833B21701D2E9AA7009C8087 /* UIImage */,
+				833B21751D2E9AA7009C8087 /* UIView */,
+				833B21781D2E9AA7009C8087 /* 加密分类 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		833B21601D2E9AA7009C8087 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				833B21611D2E9AA7009C8087 /* NSArray+Log.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		833B21621D2E9AA7009C8087 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				833B21631D2E9AA7009C8087 /* NSDictionary+Log.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		833B21641D2E9AA7009C8087 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				833B21651D2E9AA7009C8087 /* NSString+CDHExtension.h */,
+				833B21661D2E9AA7009C8087 /* NSString+CDHExtension.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		833B21671D2E9AA7009C8087 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		833B216D1D2E9AA7009C8087 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				833B216E1D2E9AA7009C8087 /* UIColor+Hex.h */,
+				833B216F1D2E9AA7009C8087 /* UIColor+Hex.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		833B21701D2E9AA7009C8087 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				833B21711D2E9AA7009C8087 /* UIImage+CDHResizingImage.h */,
+				833B21721D2E9AA7009C8087 /* UIImage+CDHResizingImage.m */,
+				833B21731D2E9AA7009C8087 /* UIImage+Image.h */,
+				833B21741D2E9AA7009C8087 /* UIImage+Image.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		833B21751D2E9AA7009C8087 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				833B21761D2E9AA7009C8087 /* UIView+Frame.h */,
+				833B21771D2E9AA7009C8087 /* UIView+Frame.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		833B21781D2E9AA7009C8087 /* 加密分类 */ = {
+			isa = PBXGroup;
+			children = (
+				833B21791D2E9AA7009C8087 /* EncryptionTools.h */,
+				833B217A1D2E9AA7009C8087 /* EncryptionTools.m */,
+				833B217B1D2E9AA7009C8087 /* NSString+Hash.h */,
+				833B217C1D2E9AA7009C8087 /* NSString+Hash.m */,
+				833B217D1D2E9AA7009C8087 /* RSACryptor.h */,
+				833B217E1D2E9AA7009C8087 /* RSACryptor.m */,
+			);
+			path = "加密分类";
+			sourceTree = "<group>";
+		};
+		833B22021D2EBA1C009C8087 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				833B22031D2EBA38009C8087 /* ViewController.h */,
+				833B22041D2EBA38009C8087 /* ViewController.m */,
+				833B22061D2EBA79009C8087 /* AppDelegate.h */,
+				833B22071D2EBA79009C8087 /* AppDelegate.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		834D61C21D2DFFA500E864E5 = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +189,10 @@
 		834D61CD1D2DFFA500E864E5 /* ToolsClasses */ = {
 			isa = PBXGroup;
 			children = (
-				833B215C1D2E98D2009C8087 /* Classes */,
+				833B215F1D2E9AA7009C8087 /* Classes */,
 				834D61D71D2DFFA600E864E5 /* Main.storyboard */,
 				834D61DA1D2DFFA600E864E5 /* Assets.xcassets */,
+				833B21F41D2EB988009C8087 /* main.m */,
 				834D61DC1D2DFFA600E864E5 /* LaunchScreen.storyboard */,
 				834D61DF1D2DFFA600E864E5 /* Info.plist */,
 				834D61CE1D2DFFA500E864E5 /* Supporting Files */,
@@ -130,7 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				834D61DE1D2DFFA600E864E5 /* LaunchScreen.storyboard in Resources */,
-				833B215D1D2E98D2009C8087 /* Classes in Resources */,
 				834D61DB1D2DFFA600E864E5 /* Assets.xcassets in Resources */,
 				834D61D91D2DFFA600E864E5 /* Main.storyboard in Resources */,
 			);
@@ -143,7 +278,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				833B22051D2EBA38009C8087 /* ViewController.m in Sources */,
+				833B218A1D2E9AA7009C8087 /* EncryptionTools.m in Sources */,
+				833B21881D2E9AA7009C8087 /* UIImage+Image.m in Sources */,
 				834D61D01D2DFFA500E864E5 /* main.m in Sources */,
+				833B21821D2E9AA7009C8087 /* NSString+CDHExtension.m in Sources */,
+				833B21811D2E9AA7009C8087 /* NSDictionary+Log.m in Sources */,
+				833B21871D2E9AA7009C8087 /* UIImage+CDHResizingImage.m in Sources */,
+				833B218B1D2E9AA7009C8087 /* NSString+Hash.m in Sources */,
+				833B21801D2E9AA7009C8087 /* NSArray+Log.m in Sources */,
+				833B21861D2E9AA7009C8087 /* UIColor+Hex.m in Sources */,
+				833B21F51D2EB988009C8087 /* main.m in Sources */,
+				833B218C1D2E9AA7009C8087 /* RSACryptor.m in Sources */,
+				833B21891D2E9AA7009C8087 /* UIView+Frame.m in Sources */,
+				833B22081D2EBA79009C8087 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  ToolsClasses
 //
-//  Created by 陈德豪 on 16/7/7.
+//  Created by 陈德豪 on 16/7/8.
 //  Copyright © 2016年 陈德豪. All rights reserved.
 //
 
@@ -41,5 +41,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 @end
