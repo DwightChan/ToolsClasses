@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		833B215B1D2E94FD009C8087 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 833B215A1D2E94FD009C8087 /* Classes */; };
+		833B215D1D2E98D2009C8087 /* Classes in Resources */ = {isa = PBXBuildFile; fileRef = 833B215C1D2E98D2009C8087 /* Classes */; };
 		834D61D01D2DFFA500E864E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 834D61CF1D2DFFA500E864E5 /* main.m */; };
 		834D61D91D2DFFA600E864E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61D71D2DFFA600E864E5 /* Main.storyboard */; };
 		834D61DB1D2DFFA600E864E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DA1D2DFFA600E864E5 /* Assets.xcassets */; };
@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		833B215A1D2E94FD009C8087 /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
+		833B215C1D2E98D2009C8087 /* Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Classes; sourceTree = "<group>"; };
 		834D61CB1D2DFFA500E864E5 /* ToolsClasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsClasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834D61CF1D2DFFA500E864E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		834D61D81D2DFFA600E864E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		834D61CD1D2DFFA500E864E5 /* ToolsClasses */ = {
 			isa = PBXGroup;
 			children = (
-				833B215A1D2E94FD009C8087 /* Classes */,
+				833B215C1D2E98D2009C8087 /* Classes */,
 				834D61D71D2DFFA600E864E5 /* Main.storyboard */,
 				834D61DA1D2DFFA600E864E5 /* Assets.xcassets */,
 				834D61DC1D2DFFA600E864E5 /* LaunchScreen.storyboard */,
@@ -130,7 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				834D61DE1D2DFFA600E864E5 /* LaunchScreen.storyboard in Resources */,
-				833B215B1D2E94FD009C8087 /* Classes in Resources */,
+				833B215D1D2E98D2009C8087 /* Classes in Resources */,
 				834D61DB1D2DFFA600E864E5 /* Assets.xcassets in Resources */,
 				834D61D91D2DFFA600E864E5 /* Main.storyboard in Resources */,
 			);
