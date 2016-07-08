@@ -20,6 +20,7 @@
 		833B22051D2EBA38009C8087 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B22041D2EBA38009C8087 /* ViewController.m */; };
 		833B220B1D2EBB9A009C8087 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B220A1D2EBB9A009C8087 /* AppDelegate.m */; };
 		833B220D1D2EBC45009C8087 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B220C1D2EBC44009C8087 /* main.m */; };
+		834AC3E61D2FF55900328F90 /* UIImage+Render.m in Sources */ = {isa = PBXBuildFile; fileRef = 834AC3E51D2FF55900328F90 /* UIImage+Render.m */; };
 		834D61D91D2DFFA600E864E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61D71D2DFFA600E864E5 /* Main.storyboard */; };
 		834D61DB1D2DFFA600E864E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DA1D2DFFA600E864E5 /* Assets.xcassets */; };
 		834D61DE1D2DFFA600E864E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DC1D2DFFA600E864E5 /* LaunchScreen.storyboard */; };
@@ -49,6 +50,8 @@
 		833B22091D2EBB9A009C8087 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		833B220A1D2EBB9A009C8087 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		833B220C1D2EBC44009C8087 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		834AC3E41D2FF55900328F90 /* UIImage+Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Render.h"; sourceTree = "<group>"; };
+		834AC3E51D2FF55900328F90 /* UIImage+Render.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Render.m"; sourceTree = "<group>"; };
 		834D61CB1D2DFFA500E864E5 /* ToolsClasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsClasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834D61D81D2DFFA600E864E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		834D61DA1D2DFFA600E864E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,11 +77,11 @@
 				833B21601D2E9AA7009C8087 /* NSArray */,
 				833B21621D2E9AA7009C8087 /* NSDictionary */,
 				833B21641D2E9AA7009C8087 /* NSString */,
-				833B21671D2E9AA7009C8087 /* Others */,
 				833B216D1D2E9AA7009C8087 /* UIColor */,
 				833B21701D2E9AA7009C8087 /* UIImage */,
 				833B21751D2E9AA7009C8087 /* UIView */,
 				833B21781D2E9AA7009C8087 /* 加密分类 */,
+				833B21671D2E9AA7009C8087 /* Others */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -134,6 +137,8 @@
 				833B21721D2E9AA7009C8087 /* UIImage+CDHResizingImage.m */,
 				833B21731D2E9AA7009C8087 /* UIImage+Image.h */,
 				833B21741D2E9AA7009C8087 /* UIImage+Image.m */,
+				834AC3E41D2FF55900328F90 /* UIImage+Render.h */,
+				834AC3E51D2FF55900328F90 /* UIImage+Render.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				833B218C1D2E9AA7009C8087 /* RSACryptor.m in Sources */,
 				833B21891D2E9AA7009C8087 /* UIView+Frame.m in Sources */,
 				833B220B1D2EBB9A009C8087 /* AppDelegate.m in Sources */,
+				834AC3E61D2FF55900328F90 /* UIImage+Render.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
