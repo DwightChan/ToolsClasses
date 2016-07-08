@@ -15,7 +15,5 @@
 + (UIImage *)imageWithColor:(UIColor *)color;
 
 
-// 加载最原始的图片，没有渲染
-+ (instancetype)imageWithOriginalName:(NSString *)imageName;
 
 @end
