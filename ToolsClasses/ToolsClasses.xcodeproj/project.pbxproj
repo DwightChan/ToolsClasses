@@ -21,6 +21,7 @@
 		833B220B1D2EBB9A009C8087 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B220A1D2EBB9A009C8087 /* AppDelegate.m */; };
 		833B220D1D2EBC45009C8087 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B220C1D2EBC44009C8087 /* main.m */; };
 		834AC3E61D2FF55900328F90 /* UIImage+Render.m in Sources */ = {isa = PBXBuildFile; fileRef = 834AC3E51D2FF55900328F90 /* UIImage+Render.m */; };
+		834AC41E1D31332C00328F90 /* UIBarButtonItem+CDHItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 834AC41D1D31332C00328F90 /* UIBarButtonItem+CDHItem.m */; };
 		834D61D91D2DFFA600E864E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61D71D2DFFA600E864E5 /* Main.storyboard */; };
 		834D61DB1D2DFFA600E864E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DA1D2DFFA600E864E5 /* Assets.xcassets */; };
 		834D61DE1D2DFFA600E864E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DC1D2DFFA600E864E5 /* LaunchScreen.storyboard */; };
@@ -52,6 +53,8 @@
 		833B220C1D2EBC44009C8087 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		834AC3E41D2FF55900328F90 /* UIImage+Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Render.h"; sourceTree = "<group>"; };
 		834AC3E51D2FF55900328F90 /* UIImage+Render.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Render.m"; sourceTree = "<group>"; };
+		834AC41C1D31332C00328F90 /* UIBarButtonItem+CDHItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CDHItem.h"; sourceTree = "<group>"; };
+		834AC41D1D31332C00328F90 /* UIBarButtonItem+CDHItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CDHItem.m"; sourceTree = "<group>"; };
 		834D61CB1D2DFFA500E864E5 /* ToolsClasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsClasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834D61D81D2DFFA600E864E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		834D61DA1D2DFFA600E864E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 				833B21701D2E9AA7009C8087 /* UIImage */,
 				833B21751D2E9AA7009C8087 /* UIView */,
 				833B21781D2E9AA7009C8087 /* 加密分类 */,
+				834AC41B1D31332C00328F90 /* UIBarButtonItem */,
 				833B21671D2E9AA7009C8087 /* Others */,
 			);
 			path = Classes;
@@ -172,6 +176,15 @@
 				833B22041D2EBA38009C8087 /* ViewController.m */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		834AC41B1D31332C00328F90 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				834AC41C1D31332C00328F90 /* UIBarButtonItem+CDHItem.h */,
+				834AC41D1D31332C00328F90 /* UIBarButtonItem+CDHItem.m */,
+			);
+			path = UIBarButtonItem;
 			sourceTree = "<group>";
 		};
 		834D61C21D2DFFA500E864E5 = {
@@ -286,6 +299,7 @@
 				833B21881D2E9AA7009C8087 /* UIImage+Image.m in Sources */,
 				833B21821D2E9AA7009C8087 /* NSString+CDHExtension.m in Sources */,
 				833B21811D2E9AA7009C8087 /* NSDictionary+Log.m in Sources */,
+				834AC41E1D31332C00328F90 /* UIBarButtonItem+CDHItem.m in Sources */,
 				833B21871D2E9AA7009C8087 /* UIImage+CDHResizingImage.m in Sources */,
 				833B218B1D2E9AA7009C8087 /* NSString+Hash.m in Sources */,
 				833B21801D2E9AA7009C8087 /* NSArray+Log.m in Sources */,
