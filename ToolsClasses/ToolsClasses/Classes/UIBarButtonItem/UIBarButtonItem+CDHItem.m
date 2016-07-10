@@ -25,6 +25,8 @@
     
     // 解决导航条按钮 点击范围过大的问题 注意: 这里写的是 bounds , 而不是 frame
     UIView *buttonView = [[UIView alloc]initWithFrame:button.bounds];
+    // 一定要将子控件添加到父控件中
+    [buttonView addSubview:button];
     
     // 添加 navigationItem.leftBarButtonItme (这个属性系统已经设置为强引用)
     return [[UIBarButtonItem alloc]initWithCustomView:buttonView];
@@ -45,6 +47,8 @@
     
     // 解决导航条按钮 点击范围过大的问题 注意: 这里写的是 bounds , 而不是 frame
     UIView *buttonView = [[UIView alloc]initWithFrame:button.bounds];
+    // 一定要将子控件添加到父控件中
+    [buttonView addSubview:button];
     
     // 添加 navigationItem.leftBarButtonItme (这个属性系统已经设置为强引用)
     return [[UIBarButtonItem alloc]initWithCustomView:buttonView];
