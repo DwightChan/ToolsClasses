@@ -10,7 +10,14 @@
 
 @interface UIImage (Render)
 
-// 提供一个不要渲染图片方法
-+ (UIImage *)imageNameWithOriginal:(NSString *)imageName;
+/**
+ *  图片不被渲染方法
+ *
+ *  @param imageName 需要不被渲染的图片
+ *
+ *  @return 返回没有被渲染的图片
+ */
++ (UIImage *)imageWithOriginal:(UIImage *)image;
+
 
 @end

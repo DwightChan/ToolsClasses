@@ -4,7 +4,7 @@
 //
 //  Created by 陈德豪 on 16/7/2.
 //  Copyright © 2016年 chendehao. All rights reserved.
-//
+//  
 
 #import <UIKit/UIKit.h>
 
@@ -17,5 +17,5 @@
  *
  *  @return 被拉伸后的图片
  */
-+ (UIImage *)resizingImageWithNamed:(NSString *)imageName;
++ (UIImage *)resizingImageWithImage:(UIImage *)image;
 @end

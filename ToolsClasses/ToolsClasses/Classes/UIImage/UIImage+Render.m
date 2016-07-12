@@ -10,10 +10,8 @@
 
 @implementation UIImage (Render)
 
-+ (UIImage *)imageNameWithOriginal:(NSString *)imageName
++ (UIImage *)imageWithOriginal:(UIImage *)image
 {
-    UIImage *image = [UIImage imageNamed:imageName];
-    
     // 返回一个没有渲染图片
     return  [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }

@@ -4,12 +4,20 @@
 //
 //  Created by 陈德豪 on 16/6/27.
 //  Copyright © 2016年 陈德豪. All rights reserved.
-//
+//  格式化数据打印分类
 
 #import <Foundation/Foundation.h>
 
 @implementation NSArray (Log)
 
+/**
+ *  格式化数组打印
+ *
+ *  @param locale 起始位置
+ *  @param level  长度
+ *
+ *  @return 返回一个被格式化的数组字符串
+ */
 - (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level{
 
     NSMutableString *string = [NSMutableString string];

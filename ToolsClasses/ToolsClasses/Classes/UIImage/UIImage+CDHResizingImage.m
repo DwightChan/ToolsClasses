@@ -11,11 +11,8 @@
 @implementation UIImage (CDHResizingImage)
 
 
-+ (UIImage *)resizingImageWithNamed:(NSString *)imageName
++ (UIImage *)resizingImageWithImage:(UIImage *)image
 {
-    // 1.创建图片对象
-    UIImage *image = [UIImage imageNamed:imageName];
-    
     // 2.创建可拉伸的图片
     CGFloat imageW = image.size.width * 0.5;
     CGFloat imageH = image.size.height * 0.5;

@@ -2,13 +2,13 @@
 //  UIColor+Hex.h
 //  颜色常识
 //
-//  Created by yz on 15/12/15.
-//  Copyright © 2015年 yz. All rights reserved.
+//  Created by chendehao on 15/12/15.
+//  Copyright © 2015年 chendehao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-#define XMGColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define CDHColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 
 @interface UIColor (Hex)
 // 默认alpha位1
