@@ -20,4 +20,11 @@
 + (UIImage *)imageWithOriginal:(UIImage *)image;
 
 
+/**
+ *  将原图裁剪为圆角图片
+ *
+ *  @return 返回一个圆形图片
+ */
+- (UIImage *)circleImage;
+
 @end

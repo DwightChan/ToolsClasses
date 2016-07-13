@@ -71,7 +71,7 @@
 
 // 条件编译传参, 不是路径则抛异常
 + (void)isExceptionErrorWithFileManager:(NSFileManager *)manager WithDirectoryPath:(NSString *)directoryPath{
-#ifdef DEBUG
+#ifdef DEBUG // 调试阶段
     BOOL isDirectory;
     BOOL isExist = [manager fileExistsAtPath: directoryPath isDirectory:&isDirectory];
     if (!isExist || !isDirectory) {
