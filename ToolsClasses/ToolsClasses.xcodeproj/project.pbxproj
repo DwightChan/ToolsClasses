@@ -13,6 +13,7 @@
 		834D61D91D2DFFA600E864E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61D71D2DFFA600E864E5 /* Main.storyboard */; };
 		834D61DB1D2DFFA600E864E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DA1D2DFFA600E864E5 /* Assets.xcassets */; };
 		834D61DE1D2DFFA600E864E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DC1D2DFFA600E864E5 /* LaunchScreen.storyboard */; };
+		839106721D369EC5008A093B /* UIView+CDHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 839106711D369EC5008A093B /* UIView+CDHFrame.m */; };
 		83AAC3541D36339800E5C890 /* CDHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AAC3531D36339800E5C890 /* CDHFileManager.m */; };
 		8E6B371A1D350EFD00954539 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37041D350EFD00954539 /* NSArray+Log.m */; };
 		8E6B371B1D350EFD00954539 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37061D350EFD00954539 /* NSDictionary+Log.m */; };
@@ -22,7 +23,6 @@
 		8E6B371F1D350EFD00954539 /* UIImage+CDHResizingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37121D350EFD00954539 /* UIImage+CDHResizingImage.m */; };
 		8E6B37201D350EFD00954539 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37141D350EFD00954539 /* UIImage+Image.m */; };
 		8E6B37211D350EFD00954539 /* UIImage+Render.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37161D350EFD00954539 /* UIImage+Render.m */; };
-		8E6B37221D350EFD00954539 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37191D350EFD00954539 /* UIView+Frame.m */; };
 		8E6B372B1D350F0E00954539 /* EncryptionTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37261D350F0E00954539 /* EncryptionTools.m */; };
 		8E6B372C1D350F0E00954539 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37281D350F0E00954539 /* NSString+Hash.m */; };
 		8E6B372D1D350F0E00954539 /* RSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B372A1D350F0E00954539 /* RSACryptor.m */; };
@@ -39,6 +39,8 @@
 		834D61DA1D2DFFA600E864E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834D61DD1D2DFFA600E864E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		834D61DF1D2DFFA600E864E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839106701D369EC5008A093B /* UIView+CDHFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CDHFrame.h"; sourceTree = "<group>"; };
+		839106711D369EC5008A093B /* UIView+CDHFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CDHFrame.m"; sourceTree = "<group>"; };
 		83AAC3521D36339800E5C890 /* CDHFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHFileManager.h; sourceTree = "<group>"; };
 		83AAC3531D36339800E5C890 /* CDHFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHFileManager.m; sourceTree = "<group>"; };
 		8E6B37041D350EFD00954539 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -55,8 +57,6 @@
 		8E6B37141D350EFD00954539 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
 		8E6B37151D350EFD00954539 /* UIImage+Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Render.h"; sourceTree = "<group>"; };
 		8E6B37161D350EFD00954539 /* UIImage+Render.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Render.m"; sourceTree = "<group>"; };
-		8E6B37181D350EFD00954539 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		8E6B37191D350EFD00954539 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		8E6B37251D350F0E00954539 /* EncryptionTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptionTools.h; sourceTree = "<group>"; };
 		8E6B37261D350F0E00954539 /* EncryptionTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptionTools.m; sourceTree = "<group>"; };
 		8E6B37271D350F0E00954539 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
@@ -233,8 +233,8 @@
 		8E6B37171D350EFD00954539 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				8E6B37181D350EFD00954539 /* UIView+Frame.h */,
-				8E6B37191D350EFD00954539 /* UIView+Frame.m */,
+				839106701D369EC5008A093B /* UIView+CDHFrame.h */,
+				839106711D369EC5008A093B /* UIView+CDHFrame.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -323,7 +323,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E6B372B1D350F0E00954539 /* EncryptionTools.m in Sources */,
-				8E6B37221D350EFD00954539 /* UIView+Frame.m in Sources */,
 				833B220D1D2EBC45009C8087 /* main.m in Sources */,
 				8E6B37201D350EFD00954539 /* UIImage+Image.m in Sources */,
 				8E6B371A1D350EFD00954539 /* NSArray+Log.m in Sources */,
@@ -333,6 +332,7 @@
 				833B22051D2EBA38009C8087 /* ViewController.m in Sources */,
 				8E6B372C1D350F0E00954539 /* NSString+Hash.m in Sources */,
 				8E6B371F1D350EFD00954539 /* UIImage+CDHResizingImage.m in Sources */,
+				839106721D369EC5008A093B /* UIView+CDHFrame.m in Sources */,
 				8E6B371B1D350EFD00954539 /* NSDictionary+Log.m in Sources */,
 				8E6B371E1D350EFD00954539 /* UIColor+Hex.m in Sources */,
 				8E6B37211D350EFD00954539 /* UIImage+Render.m in Sources */,
