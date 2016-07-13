@@ -13,6 +13,7 @@
 		834D61D91D2DFFA600E864E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61D71D2DFFA600E864E5 /* Main.storyboard */; };
 		834D61DB1D2DFFA600E864E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DA1D2DFFA600E864E5 /* Assets.xcassets */; };
 		834D61DE1D2DFFA600E864E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DC1D2DFFA600E864E5 /* LaunchScreen.storyboard */; };
+		83AAC34F1D36314400E5C890 /* CDHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AAC34E1D36314400E5C890 /* CDHFileManager.m */; };
 		8E6B371A1D350EFD00954539 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37041D350EFD00954539 /* NSArray+Log.m */; };
 		8E6B371B1D350EFD00954539 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37061D350EFD00954539 /* NSDictionary+Log.m */; };
 		8E6B371C1D350EFD00954539 /* NSString+CDHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37091D350EFD00954539 /* NSString+CDHExtension.m */; };
@@ -38,6 +39,8 @@
 		834D61DA1D2DFFA600E864E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834D61DD1D2DFFA600E864E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		834D61DF1D2DFFA600E864E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83AAC34D1D36314400E5C890 /* CDHFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHFileManager.h; sourceTree = "<group>"; };
+		83AAC34E1D36314400E5C890 /* CDHFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHFileManager.m; sourceTree = "<group>"; };
 		8E6B37041D350EFD00954539 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		8E6B37061D350EFD00954539 /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
 		8E6B37081D350EFD00954539 /* NSString+CDHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CDHExtension.h"; sourceTree = "<group>"; };
@@ -140,6 +143,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		83AAC34C1D36314400E5C890 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				83AAC34D1D36314400E5C890 /* CDHFileManager.h */,
+				83AAC34E1D36314400E5C890 /* CDHFileManager.m */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
 		8E6B37021D350EFD00954539 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +234,7 @@
 		8E6B37231D350F0300954539 /* Tool(业务类) */ = {
 			isa = PBXGroup;
 			children = (
+				83AAC34C1D36314400E5C890 /* File */,
 			);
 			path = "Tool(业务类)";
 			sourceTree = "<group>";
@@ -314,6 +327,7 @@
 				833B220D1D2EBC45009C8087 /* main.m in Sources */,
 				8E6B37201D350EFD00954539 /* UIImage+Image.m in Sources */,
 				8E6B371A1D350EFD00954539 /* NSArray+Log.m in Sources */,
+				83AAC34F1D36314400E5C890 /* CDHFileManager.m in Sources */,
 				8E6B371D1D350EFD00954539 /* UIBarButtonItem+CDHItem.m in Sources */,
 				8E6B372D1D350F0E00954539 /* RSACryptor.m in Sources */,
 				833B22051D2EBA38009C8087 /* ViewController.m in Sources */,
