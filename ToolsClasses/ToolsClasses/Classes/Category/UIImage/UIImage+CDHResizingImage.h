@@ -17,5 +17,14 @@
  *
  *  @return 被拉伸后的图片
  */
++ (UIImage *)resizingImageWithNamed:(NSString *)imageName;
+
+/**
+ *  返回一张可以随意拉伸不变形的图片
+ *
+ *  @param image
+ *
+ *  @return 被拉伸后的图片
+ */
 + (UIImage *)resizingImageWithImage:(UIImage *)image;
 @end

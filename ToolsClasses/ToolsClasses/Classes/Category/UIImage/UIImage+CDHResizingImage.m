@@ -11,14 +11,29 @@
 @implementation UIImage (CDHResizingImage)
 
 
-+ (UIImage *)resizingImageWithImage:(UIImage *)image
++ (UIImage *)resizingImageWithNamed:(NSString *)imageName
 {
+    // 1.创建图片对象
+    UIImage *image = [UIImage imageNamed:imageName];
+    
     // 2.创建可拉伸的图片
     CGFloat imageW = image.size.width * 0.5;
     CGFloat imageH = image.size.height * 0.5;
     image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(imageH, imageW, imageH, imageW)];
-//    image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(imageH , imageW , imageH, imageW) resizingMode:UIImageResizingModeTile];
+    //    image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(imageH , imageW , imageH, imageW) resizingMode:UIImageResizingModeTile];
     
     return image;
 }
+
++ (UIImage *)resizingImageWithImage:(UIImage *)image{
+    
+    // 2.创建可拉伸的图片
+    CGFloat imageW = image.size.width * 0.5;
+    CGFloat imageH = image.size.height * 0.5;
+    image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(imageH, imageW, imageH, imageW)];
+    
+    return image;
+    
+}
+
 @end
