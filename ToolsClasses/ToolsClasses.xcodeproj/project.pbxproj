@@ -14,6 +14,7 @@
 		834D61DB1D2DFFA600E864E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DA1D2DFFA600E864E5 /* Assets.xcassets */; };
 		834D61DE1D2DFFA600E864E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DC1D2DFFA600E864E5 /* LaunchScreen.storyboard */; };
 		839106721D369EC5008A093B /* UIView+CDHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 839106711D369EC5008A093B /* UIView+CDHFrame.m */; };
+		839106821D37B144008A093B /* UITextField+CDHPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 839106811D37B144008A093B /* UITextField+CDHPlaceholder.m */; };
 		83AAC3541D36339800E5C890 /* CDHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AAC3531D36339800E5C890 /* CDHFileManager.m */; };
 		8E6B371A1D350EFD00954539 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37041D350EFD00954539 /* NSArray+Log.m */; };
 		8E6B371B1D350EFD00954539 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37061D350EFD00954539 /* NSDictionary+Log.m */; };
@@ -41,6 +42,8 @@
 		834D61DF1D2DFFA600E864E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		839106701D369EC5008A093B /* UIView+CDHFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CDHFrame.h"; sourceTree = "<group>"; };
 		839106711D369EC5008A093B /* UIView+CDHFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CDHFrame.m"; sourceTree = "<group>"; };
+		839106801D37B144008A093B /* UITextField+CDHPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CDHPlaceholder.h"; sourceTree = "<group>"; };
+		839106811D37B144008A093B /* UITextField+CDHPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CDHPlaceholder.m"; sourceTree = "<group>"; };
 		83AAC3521D36339800E5C890 /* CDHFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHFileManager.h; sourceTree = "<group>"; };
 		83AAC3531D36339800E5C890 /* CDHFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHFileManager.m; sourceTree = "<group>"; };
 		8E6B37041D350EFD00954539 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
@@ -143,6 +146,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8391067F1D37B144008A093B /* UITestField */ = {
+			isa = PBXGroup;
+			children = (
+				839106801D37B144008A093B /* UITextField+CDHPlaceholder.h */,
+				839106811D37B144008A093B /* UITextField+CDHPlaceholder.m */,
+			);
+			path = UITestField;
+			sourceTree = "<group>";
+		};
 		83AAC3501D36339800E5C890 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +175,7 @@
 		8E6B37021D350EFD00954539 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				8391067F1D37B144008A093B /* UITestField */,
 				8E6B37031D350EFD00954539 /* NSArray */,
 				8E6B37051D350EFD00954539 /* NSDictionary */,
 				8E6B37071D350EFD00954539 /* NSString */,
@@ -322,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839106821D37B144008A093B /* UITextField+CDHPlaceholder.m in Sources */,
 				8E6B372B1D350F0E00954539 /* EncryptionTools.m in Sources */,
 				833B220D1D2EBC45009C8087 /* main.m in Sources */,
 				8E6B37201D350EFD00954539 /* UIImage+Image.m in Sources */,
