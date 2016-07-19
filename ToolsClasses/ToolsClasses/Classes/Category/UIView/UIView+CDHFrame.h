@@ -21,4 +21,7 @@
 @property (nonatomic, assign) CGFloat CDH_centerX;
 @property (nonatomic, assign) CGFloat CDH_centerY;
 
+/** 快速创建从 xib 中加载的 view 的类方法 */
++ (instancetype)cdh_viewFromXib;
+
 @end

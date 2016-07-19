@@ -10,6 +10,9 @@
 
 @interface UITextField (CDHPlaceholder)
 
+/**
+ *  设置站位文字的属性
+ */
 @property UIColor *placeholderColor;
 
 @end

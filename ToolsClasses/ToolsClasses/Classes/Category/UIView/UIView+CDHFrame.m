@@ -10,6 +10,10 @@
 
 @implementation UIView (CDHFrame)
 
++ (instancetype)cdh_viewFromXib{
+    return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil].firstObject;
+}
+
 - (void)setCDH_x:(CGFloat)CDH_x{
     
     CGRect frame = self.frame;
