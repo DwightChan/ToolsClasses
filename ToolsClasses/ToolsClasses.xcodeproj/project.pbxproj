@@ -17,6 +17,7 @@
 		839106721D369EC5008A093B /* UIView+CDHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 839106711D369EC5008A093B /* UIView+CDHFrame.m */; };
 		839106821D37B144008A093B /* UITextField+CDHPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 839106811D37B144008A093B /* UITextField+CDHPlaceholder.m */; };
 		83AAC3541D36339800E5C890 /* CDHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AAC3531D36339800E5C890 /* CDHFileManager.m */; };
+		83CBA0841D43B01500813E2F /* CDHHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CBA0831D43B01500813E2F /* CDHHttpTool.m */; };
 		8E6B371A1D350EFD00954539 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37041D350EFD00954539 /* NSArray+Log.m */; };
 		8E6B371B1D350EFD00954539 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37061D350EFD00954539 /* NSDictionary+Log.m */; };
 		8E6B371C1D350EFD00954539 /* NSString+CDHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37091D350EFD00954539 /* NSString+CDHExtension.m */; };
@@ -49,6 +50,8 @@
 		839106811D37B144008A093B /* UITextField+CDHPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CDHPlaceholder.m"; sourceTree = "<group>"; };
 		83AAC3521D36339800E5C890 /* CDHFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHFileManager.h; sourceTree = "<group>"; };
 		83AAC3531D36339800E5C890 /* CDHFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHFileManager.m; sourceTree = "<group>"; };
+		83CBA0821D43B01500813E2F /* CDHHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHHttpTool.h; sourceTree = "<group>"; };
+		83CBA0831D43B01500813E2F /* CDHHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHHttpTool.m; sourceTree = "<group>"; };
 		8E6B37041D350EFD00954539 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		8E6B37061D350EFD00954539 /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
 		8E6B37081D350EFD00954539 /* NSString+CDHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CDHExtension.h"; sourceTree = "<group>"; };
@@ -182,6 +185,7 @@
 		83AAC3501D36339800E5C890 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				83CBA07E1D43AFD400813E2F /* Http */,
 				83AAC3511D36339800E5C890 /* File */,
 			);
 			path = Tools;
@@ -194,6 +198,15 @@
 				83AAC3531D36339800E5C890 /* CDHFileManager.m */,
 			);
 			path = File;
+			sourceTree = "<group>";
+		};
+		83CBA07E1D43AFD400813E2F /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				83CBA0821D43B01500813E2F /* CDHHttpTool.h */,
+				83CBA0831D43B01500813E2F /* CDHHttpTool.m */,
+			);
+			path = Http;
 			sourceTree = "<group>";
 		};
 		8E6B37021D350EFD00954539 /* Category */ = {
@@ -426,6 +439,7 @@
 				8E6B371E1D350EFD00954539 /* UIColor+Hex.m in Sources */,
 				8E6B37211D350EFD00954539 /* UIImage+Render.m in Sources */,
 				833B220B1D2EBB9A009C8087 /* AppDelegate.m in Sources */,
+				83CBA0841D43B01500813E2F /* CDHHttpTool.m in Sources */,
 				8E6B371C1D350EFD00954539 /* NSString+CDHExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
