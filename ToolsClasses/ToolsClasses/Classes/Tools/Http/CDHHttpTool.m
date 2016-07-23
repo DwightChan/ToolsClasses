@@ -2,8 +2,8 @@
 //  CDHHttpTool.m
 //  ToolsClasses
 //
-//  Created by chendehao on 16/7/23.
-//  Copyright © 2016年 陈德豪. All rights reserved.
+//  Created by chendehao on 15/3/23.
+//  Copyright © 2015年 陈德豪. All rights reserved.
 //
 
 #import "CDHHttpTool.h"

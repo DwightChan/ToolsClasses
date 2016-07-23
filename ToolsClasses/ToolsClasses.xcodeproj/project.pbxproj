@@ -18,6 +18,7 @@
 		839106821D37B144008A093B /* UITextField+CDHPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 839106811D37B144008A093B /* UITextField+CDHPlaceholder.m */; };
 		83AAC3541D36339800E5C890 /* CDHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AAC3531D36339800E5C890 /* CDHFileManager.m */; };
 		83CBA0841D43B01500813E2F /* CDHHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CBA0831D43B01500813E2F /* CDHHttpTool.m */; };
+		83CBA08B1D43B20400813E2F /* NSMutableURLRequest+CDHUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CBA08A1D43B20400813E2F /* NSMutableURLRequest+CDHUpload.m */; };
 		8E6B371A1D350EFD00954539 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37041D350EFD00954539 /* NSArray+Log.m */; };
 		8E6B371B1D350EFD00954539 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37061D350EFD00954539 /* NSDictionary+Log.m */; };
 		8E6B371C1D350EFD00954539 /* NSString+CDHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37091D350EFD00954539 /* NSString+CDHExtension.m */; };
@@ -52,6 +53,8 @@
 		83AAC3531D36339800E5C890 /* CDHFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHFileManager.m; sourceTree = "<group>"; };
 		83CBA0821D43B01500813E2F /* CDHHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHHttpTool.h; sourceTree = "<group>"; };
 		83CBA0831D43B01500813E2F /* CDHHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHHttpTool.m; sourceTree = "<group>"; };
+		83CBA0891D43B20400813E2F /* NSMutableURLRequest+CDHUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+CDHUpload.h"; sourceTree = "<group>"; };
+		83CBA08A1D43B20400813E2F /* NSMutableURLRequest+CDHUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+CDHUpload.m"; sourceTree = "<group>"; };
 		8E6B37041D350EFD00954539 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		8E6B37061D350EFD00954539 /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
 		8E6B37081D350EFD00954539 /* NSString+CDHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CDHExtension.h"; sourceTree = "<group>"; };
@@ -209,9 +212,19 @@
 			path = Http;
 			sourceTree = "<group>";
 		};
+		83CBA0851D43B1A700813E2F /* NSMutableURLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				83CBA0891D43B20400813E2F /* NSMutableURLRequest+CDHUpload.h */,
+				83CBA08A1D43B20400813E2F /* NSMutableURLRequest+CDHUpload.m */,
+			);
+			path = NSMutableURLRequest;
+			sourceTree = "<group>";
+		};
 		8E6B37021D350EFD00954539 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				83CBA0851D43B1A700813E2F /* NSMutableURLRequest */,
 				8391067F1D37B144008A093B /* UITestField */,
 				8E6B37031D350EFD00954539 /* NSArray */,
 				8E6B37051D350EFD00954539 /* NSDictionary */,
@@ -431,6 +444,7 @@
 				83AAC3541D36339800E5C890 /* CDHFileManager.m in Sources */,
 				8E6B371D1D350EFD00954539 /* UIBarButtonItem+CDHItem.m in Sources */,
 				8E6B372D1D350F0E00954539 /* RSACryptor.m in Sources */,
+				83CBA08B1D43B20400813E2F /* NSMutableURLRequest+CDHUpload.m in Sources */,
 				833B22051D2EBA38009C8087 /* ViewController.m in Sources */,
 				8E6B372C1D350F0E00954539 /* NSString+Hash.m in Sources */,
 				8E6B371F1D350EFD00954539 /* UIImage+CDHResizingImage.m in Sources */,
