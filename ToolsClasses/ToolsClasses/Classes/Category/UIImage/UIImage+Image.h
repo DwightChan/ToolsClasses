@@ -2,8 +2,8 @@
 //  UIImage+Image.h
 //  
 //
-//  Created by yz on 15/7/6.
-//  Copyright (c) 2015年 yz. All rights reserved.
+//  Created by cdhao on 15/7/6.
+//  Copyright (c) 2015年 cdhao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

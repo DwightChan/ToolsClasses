@@ -12,6 +12,7 @@
 		834D61D91D2DFFA600E864E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61D71D2DFFA600E864E5 /* Main.storyboard */; };
 		834D61DB1D2DFFA600E864E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DA1D2DFFA600E864E5 /* Assets.xcassets */; };
 		834D61DE1D2DFFA600E864E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DC1D2DFFA600E864E5 /* LaunchScreen.storyboard */; };
+		8364B4221D5EBE48004F4A1A /* UIImage+GetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8364B4211D5EBE48004F4A1A /* UIImage+GetColor.m */; };
 		8386D66E1D54DD6C00C7B98F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8386D66C1D54DD6C00C7B98F /* AppDelegate.m */; };
 		8386D66F1D54DD6C00C7B98F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8386D66D1D54DD6C00C7B98F /* main.m */; };
 		839106721D369EC5008A093B /* UIView+CDHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 839106711D369EC5008A093B /* UIView+CDHFrame.m */; };
@@ -43,6 +44,8 @@
 		834D61DA1D2DFFA600E864E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834D61DD1D2DFFA600E864E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		834D61DF1D2DFFA600E864E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8364B4201D5EBE48004F4A1A /* UIImage+GetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GetColor.h"; sourceTree = "<group>"; };
+		8364B4211D5EBE48004F4A1A /* UIImage+GetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GetColor.m"; sourceTree = "<group>"; };
 		8386D66B1D54DD6C00C7B98F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8386D66C1D54DD6C00C7B98F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8386D66D1D54DD6C00C7B98F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -161,12 +164,12 @@
 			children = (
 				8386D66B1D54DD6C00C7B98F /* AppDelegate.h */,
 				8386D66C1D54DD6C00C7B98F /* AppDelegate.m */,
-				8386D66D1D54DD6C00C7B98F /* main.m */,
 				833B215F1D2E9AA7009C8087 /* Classes */,
 				834D61D71D2DFFA600E864E5 /* Main.storyboard */,
 				834D61DA1D2DFFA600E864E5 /* Assets.xcassets */,
 				834D61DC1D2DFFA600E864E5 /* LaunchScreen.storyboard */,
 				834D61DF1D2DFFA600E864E5 /* Info.plist */,
+				8386D66D1D54DD6C00C7B98F /* main.m */,
 				834D61CE1D2DFFA500E864E5 /* Supporting Files */,
 			);
 			path = ToolsClasses;
@@ -286,6 +289,8 @@
 		8E6B37101D350EFD00954539 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				8364B4201D5EBE48004F4A1A /* UIImage+GetColor.h */,
+				8364B4211D5EBE48004F4A1A /* UIImage+GetColor.m */,
 				8E6B37111D350EFD00954539 /* UIImage+CDHResizingImage.h */,
 				8E6B37121D350EFD00954539 /* UIImage+CDHResizingImage.m */,
 				8E6B37131D350EFD00954539 /* UIImage+Image.h */,
@@ -444,6 +449,7 @@
 				839106821D37B144008A093B /* UITextField+CDHPlaceholder.m in Sources */,
 				8E6B372B1D350F0E00954539 /* EncryptionTools.m in Sources */,
 				8E6B37201D350EFD00954539 /* UIImage+Image.m in Sources */,
+				8364B4221D5EBE48004F4A1A /* UIImage+GetColor.m in Sources */,
 				8E6B371A1D350EFD00954539 /* NSArray+Log.m in Sources */,
 				83AAC3541D36339800E5C890 /* CDHFileManager.m in Sources */,
 				8E6B371D1D350EFD00954539 /* UIBarButtonItem+CDHItem.m in Sources */,
