@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		074B6346D676214D5D7E5546 /* libPods-ToolsClasses.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB1A75EB5593490B4174C03 /* libPods-ToolsClasses.a */; };
 		833B22051D2EBA38009C8087 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B22041D2EBA38009C8087 /* ViewController.m */; };
+		8340998E1D7835B3000FA95D /* CDHImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8340998A1D7835B3000FA95D /* CDHImageCell.m */; };
+		8340998F1D7835B3000FA95D /* CDHImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8340998B1D7835B3000FA95D /* CDHImageCell.xib */; };
+		834099901D7835B3000FA95D /* CDHInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8340998D1D7835B3000FA95D /* CDHInfiniteScrollView.m */; };
 		834D61D91D2DFFA600E864E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61D71D2DFFA600E864E5 /* Main.storyboard */; };
 		834D61DB1D2DFFA600E864E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DA1D2DFFA600E864E5 /* Assets.xcassets */; };
 		834D61DE1D2DFFA600E864E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DC1D2DFFA600E864E5 /* LaunchScreen.storyboard */; };
@@ -39,6 +42,11 @@
 		1EB1A75EB5593490B4174C03 /* libPods-ToolsClasses.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToolsClasses.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		833B22031D2EBA38009C8087 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		833B22041D2EBA38009C8087 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		834099891D7835B3000FA95D /* CDHImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHImageCell.h; sourceTree = "<group>"; };
+		8340998A1D7835B3000FA95D /* CDHImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHImageCell.m; sourceTree = "<group>"; };
+		8340998B1D7835B3000FA95D /* CDHImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDHImageCell.xib; sourceTree = "<group>"; };
+		8340998C1D7835B3000FA95D /* CDHInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHInfiniteScrollView.h; sourceTree = "<group>"; };
+		8340998D1D7835B3000FA95D /* CDHInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHInfiniteScrollView.m; sourceTree = "<group>"; };
 		834D61CB1D2DFFA500E864E5 /* ToolsClasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsClasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834D61D81D2DFFA600E864E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		834D61DA1D2DFFA600E864E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,6 +124,7 @@
 		833B215F1D2E9AA7009C8087 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				834099881D7835B3000FA95D /* CDHInfiniteScrollView(无限轮播) */,
 				83AAC3501D36339800E5C890 /* Tools */,
 				8E6B37241D350F0E00954539 /* 加密 */,
 				8E6B37021D350EFD00954539 /* Category */,
@@ -139,6 +148,19 @@
 				833B22041D2EBA38009C8087 /* ViewController.m */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		834099881D7835B3000FA95D /* CDHInfiniteScrollView(无限轮播) */ = {
+			isa = PBXGroup;
+			children = (
+				834099891D7835B3000FA95D /* CDHImageCell.h */,
+				8340998A1D7835B3000FA95D /* CDHImageCell.m */,
+				8340998B1D7835B3000FA95D /* CDHImageCell.xib */,
+				8340998C1D7835B3000FA95D /* CDHInfiniteScrollView.h */,
+				8340998D1D7835B3000FA95D /* CDHInfiniteScrollView.m */,
+			);
+			name = "CDHInfiniteScrollView(无限轮播)";
+			path = CDHInfiniteScrollView;
 			sourceTree = "<group>";
 		};
 		834D61C21D2DFFA500E864E5 = {
@@ -388,6 +410,7 @@
 				834D61DE1D2DFFA600E864E5 /* LaunchScreen.storyboard in Resources */,
 				834D61DB1D2DFFA600E864E5 /* Assets.xcassets in Resources */,
 				834D61D91D2DFFA600E864E5 /* Main.storyboard in Resources */,
+				8340998F1D7835B3000FA95D /* CDHImageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +478,7 @@
 				8E6B371D1D350EFD00954539 /* UIBarButtonItem+CDHItem.m in Sources */,
 				8E6B372D1D350F0E00954539 /* RSACryptor.m in Sources */,
 				83CBA08B1D43B20400813E2F /* NSMutableURLRequest+CDHUpload.m in Sources */,
+				834099901D7835B3000FA95D /* CDHInfiniteScrollView.m in Sources */,
 				833B22051D2EBA38009C8087 /* ViewController.m in Sources */,
 				8E6B372C1D350F0E00954539 /* NSString+Hash.m in Sources */,
 				8E6B371F1D350EFD00954539 /* UIImage+CDHResizingImage.m in Sources */,
@@ -465,6 +489,7 @@
 				8E6B37211D350EFD00954539 /* UIImage+Render.m in Sources */,
 				83CBA0841D43B01500813E2F /* CDHHttpTool.m in Sources */,
 				8E6B371C1D350EFD00954539 /* NSString+CDHExtension.m in Sources */,
+				8340998E1D7835B3000FA95D /* CDHImageCell.m in Sources */,
 				8386D66F1D54DD6C00C7B98F /* main.m in Sources */,
 				8386D66E1D54DD6C00C7B98F /* AppDelegate.m in Sources */,
 			);
