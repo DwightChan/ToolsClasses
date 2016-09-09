@@ -18,7 +18,7 @@
 
 @implementation CDHInfiniteScrollView
 
-static NSInteger XMGItemCount = 100;
+static NSInteger CDHItemCount = 100;
 static NSString * const CDHImageCellId = @"CDHImageCell";
 
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -46,7 +46,7 @@ static NSString * const CDHImageCellId = @"CDHImageCell";
     _images = images;
     
     // 设置默认显示最中间的图片
-    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:(XMGItemCount * self.images.count) / 2 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+    [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:(CDHItemCount * self.images.count) / 2 inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
     
     // 开启定时器
     [self startTimer];
@@ -82,7 +82,7 @@ static NSString * const CDHImageCellId = @"CDHImageCell";
 
 #pragma mark - <UICollectionViewDataSource>
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return XMGItemCount * self.images.count;
+    return CDHItemCount * self.images.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -98,7 +98,7 @@ static NSString * const CDHImageCellId = @"CDHImageCell";
 - (void)resetPosition{
     // 滚动完毕时，自动显示最中间的cell
     NSInteger oldItem = self.collectionView.contentOffset.x / self.collectionView.frame.size.width;
-    NSInteger newItem = (XMGItemCount * self.images.count / 2) + (oldItem % self.images.count);
+    NSInteger newItem = (CDHItemCount * self.images.count / 2) + (oldItem % self.images.count);
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:newItem inSection:0];
     [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
     // NSLog(@"oldItem= %ld, newItem = %ld",oldItem,newItem);
