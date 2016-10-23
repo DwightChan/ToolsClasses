@@ -1,17 +1,31 @@
 //
-//  NSString+CDHExtension.m
+//  NSString+StringSizeWithFont.h
 //  15-自定义不等高的cell-纯代码-frame01-
 //
 //  Created by 陈德豪 on 16/7/2.
 //  Copyright © 2016年 chendehao. All rights reserved.
 //
 
-#import "NSString+CDHExtension.h"
+#import "NSString+StringSizeWithFont.h"
 
 
-@implementation NSString (CDHExtension)
+@implementation NSString (StringSizeWithFont)
 
-// 文本的尺寸大小
+/// 计算字符串的尺寸大小
+- (CGSize)sizeWithMyFont:(UIFont *)font {
+
+    if ([self respondsToSelector:@selector(sizeWithAttributes:)])
+    {
+        NSDictionary* attribs = @{NSFontAttributeName:font};
+        return ([self sizeWithAttributes:attribs]);
+    }
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    return ([self sizeWithFont:font]);
+#pragma clang diagnostic pop
+    }
+
+/// 文本的尺寸大小
 - (CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize{
 
     // 如果没有字体大小则直接默认是 14 号字体
@@ -21,7 +35,8 @@
     NSDictionary *attrs = @{NSFontAttributeName : font};
     return [self boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
 }
-// 文本的尺寸大小
+
+/// 文本的尺寸大小
 - (CGSize)sizeWithFont:(UIFont *)font maxWidth:(CGFloat)maxWidth{
     
     // 如果没有字体大小则直接默认是 14 号字体

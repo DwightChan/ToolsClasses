@@ -20,7 +20,6 @@
     // 传输路径不是文件夹或者不存在则抛异常
     [self isExceptionErrorWithFileManager:manager WithDirectoryPath:directoryPath];
 
-
     // 获取文件夹下所有文件
     NSArray *subPaths = [manager subpathsAtPath:directoryPath];
     
@@ -76,7 +75,6 @@
     BOOL isExist = [manager fileExistsAtPath: directoryPath isDirectory:&isDirectory];
     if (!isExist || !isDirectory) {
         
-        
         // 文件传输出错抛出异常
         NSException *exception = [NSException exceptionWithName:@"filePathError" reason:@"传输路径出错, 必须是文件夹路径" userInfo: nil];
         
@@ -85,16 +83,6 @@
 #else
 #endif
 }
-
-
-
-
-
-
-
-
-
-
 
 
 @end

@@ -24,9 +24,10 @@
 		83AAC3541D36339800E5C890 /* CDHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AAC3531D36339800E5C890 /* CDHFileManager.m */; };
 		83CBA0841D43B01500813E2F /* CDHHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CBA0831D43B01500813E2F /* CDHHttpTool.m */; };
 		83CBA08B1D43B20400813E2F /* NSMutableURLRequest+CDHUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CBA08A1D43B20400813E2F /* NSMutableURLRequest+CDHUpload.m */; };
+		83D5AC4C1DBCE3A7003AFD94 /* PAProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D5AC4B1DBCE3A7003AFD94 /* PAProgressView.m */; };
 		8E6B371A1D350EFD00954539 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37041D350EFD00954539 /* NSArray+Log.m */; };
 		8E6B371B1D350EFD00954539 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37061D350EFD00954539 /* NSDictionary+Log.m */; };
-		8E6B371C1D350EFD00954539 /* NSString+CDHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37091D350EFD00954539 /* NSString+CDHExtension.m */; };
+		8E6B371C1D350EFD00954539 /* NSString+StringSizeWithFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37091D350EFD00954539 /* NSString+StringSizeWithFont.m */; };
 		8E6B371D1D350EFD00954539 /* UIBarButtonItem+CDHItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B370C1D350EFD00954539 /* UIBarButtonItem+CDHItem.m */; };
 		8E6B371E1D350EFD00954539 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B370F1D350EFD00954539 /* UIColor+Hex.m */; };
 		8E6B371F1D350EFD00954539 /* UIImage+CDHResizingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37121D350EFD00954539 /* UIImage+CDHResizingImage.m */; };
@@ -69,10 +70,13 @@
 		83CBA0831D43B01500813E2F /* CDHHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHHttpTool.m; sourceTree = "<group>"; };
 		83CBA0891D43B20400813E2F /* NSMutableURLRequest+CDHUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+CDHUpload.h"; sourceTree = "<group>"; };
 		83CBA08A1D43B20400813E2F /* NSMutableURLRequest+CDHUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+CDHUpload.m"; sourceTree = "<group>"; };
+		83D5AC4A1DBCE3A7003AFD94 /* PAProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAProgressView.h; sourceTree = "<group>"; };
+		83D5AC4B1DBCE3A7003AFD94 /* PAProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAProgressView.m; sourceTree = "<group>"; };
+		83D5AC4D1DBCE48B003AFD94 /* PCH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCH.h; sourceTree = "<group>"; };
 		8E6B37041D350EFD00954539 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		8E6B37061D350EFD00954539 /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
-		8E6B37081D350EFD00954539 /* NSString+CDHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CDHExtension.h"; sourceTree = "<group>"; };
-		8E6B37091D350EFD00954539 /* NSString+CDHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CDHExtension.m"; sourceTree = "<group>"; };
+		8E6B37081D350EFD00954539 /* NSString+StringSizeWithFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringSizeWithFont.h"; sourceTree = "<group>"; };
+		8E6B37091D350EFD00954539 /* NSString+StringSizeWithFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringSizeWithFont.m"; sourceTree = "<group>"; };
 		8E6B370B1D350EFD00954539 /* UIBarButtonItem+CDHItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CDHItem.h"; sourceTree = "<group>"; };
 		8E6B370C1D350EFD00954539 /* UIBarButtonItem+CDHItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CDHItem.m"; sourceTree = "<group>"; };
 		8E6B370E1D350EFD00954539 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 		833B215F1D2E9AA7009C8087 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				83D5AC491DBCE392003AFD94 /* View */,
 				834099881D7835B3000FA95D /* CDHInfiniteScrollView(无限轮播) */,
 				83AAC3501D36339800E5C890 /* Tools */,
 				8E6B37241D350F0E00954539 /* 加密 */,
@@ -137,6 +142,7 @@
 		833B21671D2E9AA7009C8087 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				83D5AC4D1DBCE48B003AFD94 /* PCH.h */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -249,6 +255,15 @@
 			path = NSMutableURLRequest;
 			sourceTree = "<group>";
 		};
+		83D5AC491DBCE392003AFD94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83D5AC4A1DBCE3A7003AFD94 /* PAProgressView.h */,
+				83D5AC4B1DBCE3A7003AFD94 /* PAProgressView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8E6B37021D350EFD00954539 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,8 +299,8 @@
 		8E6B37071D350EFD00954539 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				8E6B37081D350EFD00954539 /* NSString+CDHExtension.h */,
-				8E6B37091D350EFD00954539 /* NSString+CDHExtension.m */,
+				8E6B37081D350EFD00954539 /* NSString+StringSizeWithFont.h */,
+				8E6B37091D350EFD00954539 /* NSString+StringSizeWithFont.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -376,7 +391,7 @@
 		834D61C31D2DFFA500E864E5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "陈德豪";
 				TargetAttributes = {
 					834D61CA1D2DFFA500E864E5 = {
@@ -473,6 +488,7 @@
 				8E6B372B1D350F0E00954539 /* EncryptionTools.m in Sources */,
 				8E6B37201D350EFD00954539 /* UIImage+Image.m in Sources */,
 				8364B4221D5EBE48004F4A1A /* UIImage+GetColor.m in Sources */,
+				83D5AC4C1DBCE3A7003AFD94 /* PAProgressView.m in Sources */,
 				8E6B371A1D350EFD00954539 /* NSArray+Log.m in Sources */,
 				83AAC3541D36339800E5C890 /* CDHFileManager.m in Sources */,
 				8E6B371D1D350EFD00954539 /* UIBarButtonItem+CDHItem.m in Sources */,
@@ -488,7 +504,7 @@
 				83A53E8C1D477F84005FC1C2 /* UIImage+CDHCircleImage.m in Sources */,
 				8E6B37211D350EFD00954539 /* UIImage+Render.m in Sources */,
 				83CBA0841D43B01500813E2F /* CDHHttpTool.m in Sources */,
-				8E6B371C1D350EFD00954539 /* NSString+CDHExtension.m in Sources */,
+				8E6B371C1D350EFD00954539 /* NSString+StringSizeWithFont.m in Sources */,
 				8340998E1D7835B3000FA95D /* CDHImageCell.m in Sources */,
 				8386D66F1D54DD6C00C7B98F /* main.m in Sources */,
 				8386D66E1D54DD6C00C7B98F /* AppDelegate.m in Sources */,
@@ -531,8 +547,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -576,8 +594,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -606,6 +626,7 @@
 			baseConfigurationReference = 969CC9B9BFE2A497C62AE21D /* Pods-ToolsClasses.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = ToolsClasses/Classes/Others/PCH.h;
 				INFOPLIST_FILE = ToolsClasses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chendehao.ToolsClasses;
@@ -618,6 +639,7 @@
 			baseConfigurationReference = 164873D83F48200BA0C0E20F /* Pods-ToolsClasses.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = ToolsClasses/Classes/Others/PCH.h;
 				INFOPLIST_FILE = ToolsClasses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chendehao.ToolsClasses;
