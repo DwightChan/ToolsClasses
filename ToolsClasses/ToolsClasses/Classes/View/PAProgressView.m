@@ -3,7 +3,7 @@
 //  PARockPay
 //
 //  Created by Chen Jacky on 12-12-31.
-//  Copyright (c) 2014年 xyh. All rights reserved.
+//  Copyright (c) 2012年 xyh. All rights reserved.
 //
 
 #import "PAProgressView.h"
@@ -19,15 +19,20 @@
 #define kPAProgressView_AnimateDuration         1.8f  //显示时间
 
 @interface PAProgressView()
-
-
-@property (nonatomic , assign) PAProgressViewType nCurrentProgressType;
-@property (nonatomic , weak) UIView *pRectangleView;
-@property (nonatomic ,weak) UILabel *pContent;
-@property (nonatomic ,weak) UIActivityIndicatorView *pLoadingView;
-@property (nonatomic, strong) NSTimer *mpTimer;
-@property (nonatomic, assign) NSUInteger nTimerCount;
-
+{
+    __unsafe_unretained id                     m_pDelegate;
+    
+    PAProgressViewType      m_nCurrentProgressType;
+    
+    UIView                  *m_pRectangleView;
+    
+    UILabel                 *m_pContent;
+    
+    UIActivityIndicatorView *m_pLoadingView;
+    
+    NSTimer                 *m_pTimer;
+    NSInteger               m_nTimerCount;
+}
 
 + (PAProgressView *)showInView:(UIView *)view
                  contentString:(NSString *)string
@@ -54,7 +59,9 @@
 
 @implementation PAProgressView
 
+@synthesize delegate = m_pDelegate;
 
+@synthesize progressType = m_nCurrentProgressType;
 
 #pragma mark - Public Class methods
 + (PAProgressView *)showInView:(UIView *)view
@@ -158,26 +165,26 @@
         // Initialization code
         [self setFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
         
-        _pRectangleView = [[UIView alloc] initWithFrame:CGRectMake(60, kScreenHeight * 0.5f, 180, 45)];
+        m_pRectangleView = [[UIView alloc] initWithFrame:CGRectMake(60, kScreenHeight * 0.5f, 180, 45)];
         
-        [_pRectangleView.layer setBackgroundColor:[[UIColor colorWithRed:0 green:0 blue:0 alpha:kPAProgressView_RectangleViewAlpha] CGColor]];
-        [_pRectangleView.layer setCornerRadius:10];
+        [m_pRectangleView.layer setBackgroundColor:[[UIColor colorWithRed:0 green:0 blue:0 alpha:kPAProgressView_RectangleViewAlpha] CGColor]];
+        [m_pRectangleView.layer setCornerRadius:10];
         
-        [self addSubview:_pRectangleView];
+        [self addSubview:m_pRectangleView];
 //        [m_pRectangleView release];
         
-        _pLoadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-        [_pLoadingView setFrame:CGRectMake(0, 13, 20, 20)];
-        [_pLoadingView setHidden:YES];
-        [_pRectangleView addSubview:_pLoadingView];
+        m_pLoadingView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+        [m_pLoadingView setFrame:CGRectMake(0, 13, 20, 20)];
+        [m_pLoadingView setHidden:YES];
+        [m_pRectangleView addSubview:m_pLoadingView];
 //        [m_pLoadingView release];
         
-        _pContent = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, _pRectangleView.frame.size.width, _pRectangleView.frame.size.height)];
-        [_pContent setBackgroundColor:[UIColor clearColor]];
-        [_pContent setTextColor:[UIColor whiteColor]];
-        [_pContent setFont:kPAProgressView_ContentStringFont];
-        [_pContent setTextAlignment:NSTextAlignmentCenter];
-        [_pRectangleView addSubview:_pContent];
+        m_pContent = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, m_pRectangleView.frame.size.width, m_pRectangleView.frame.size.height)];
+        [m_pContent setBackgroundColor:[UIColor clearColor]];
+        [m_pContent setTextColor:[UIColor whiteColor]];
+        [m_pContent setFont:kPAProgressView_ContentStringFont];
+        [m_pContent setTextAlignment:NSTextAlignmentCenter];
+        [m_pRectangleView addSubview:m_pContent];
 //        [m_pContent release];
         
         
@@ -190,36 +197,36 @@
 - (void)initTimer
 {
     NSDate *date = [NSDate date];
-    _mpTimer = [[NSTimer alloc] initWithFireDate:date
+    m_pTimer = [[NSTimer alloc] initWithFireDate:date
                                         interval:1
                                           target:self
                                         selector:@selector(timerMethods)
                                         userInfo:nil
                                          repeats:YES];
     
-    [[NSRunLoop currentRunLoop] addTimer:_mpTimer forMode:NSRunLoopCommonModes];
+    [[NSRunLoop currentRunLoop] addTimer:m_pTimer forMode:NSRunLoopCommonModes];
     
-    _nTimerCount = 0;
+    m_nTimerCount = 0;
 }
 - (void)timerRelease
 {
-    if(_mpTimer)
+    if(m_pTimer)
     {
-        [_mpTimer invalidate];
+        [m_pTimer invalidate];
 //        [m_pTimer release];
     }
 }
 
 - (void)timerMethods
 {
-    if (_nTimerCount >= kPAProgressView_AnimateDuration)
+    if (m_nTimerCount >= kPAProgressView_AnimateDuration)
     {
         [self timerRelease];
         
         [self hide];
     }
     
-    _nTimerCount++;
+    m_nTimerCount++;
 }
 
 #pragma mark - methods
@@ -233,11 +240,11 @@
     
     [view addSubview:self];
     
-    [_pContent setText:string];
+    [m_pContent setText:string];
     
     [self show];
     
-     _delegate = delegate;
+     m_pDelegate = delegate;
     
     if ( autoHide )
     {
@@ -247,7 +254,7 @@
 
 - (void)showInView:(UIView *)view
 {
-    [self refreshFrameWithString:_pContent.text type:_nCurrentProgressType showView:view];
+    [self refreshFrameWithString:m_pContent.text type:m_nCurrentProgressType showView:view];
     [view addSubview:self];
     [self show];
 }
@@ -280,9 +287,9 @@
     
     
     
-    if (_delegate && [_delegate respondsToSelector:@selector(PAProgressViewDismiss:)])
+    if (m_pDelegate && [m_pDelegate respondsToSelector:@selector(PAProgressViewDismiss:)])
     {
-        [_delegate performSelector:@selector(PAProgressViewDismiss:) withObject:self];
+        [m_pDelegate performSelector:@selector(PAProgressViewDismiss:) withObject:self];
     }
 }
 
@@ -305,83 +312,83 @@
     {
         case PAProgressViewTypeString:
         {
-            [_pLoadingView stopAnimating];
-            [_pLoadingView setHidden:YES];
+            [m_pLoadingView stopAnimating];
+            [m_pLoadingView setHidden:YES];
             
             if (nContentStringWith <= 140)
             {
-                [_pRectangleView setFrame:CGRectMake((kScreenWidth - 180)/2,
+                [m_pRectangleView setFrame:CGRectMake((kScreenWidth - 180)/2,
                                                       viewHeight-108-45,                                                   180,
                                                       45)];
-                [_pContent setFrame:CGRectMake(0,
+                [m_pContent setFrame:CGRectMake(0,
                                                 0,
-                                                _pRectangleView.frame.size.width,
-                                                _pContent.frame.size.height)];
+                                                m_pRectangleView.frame.size.width,
+                                                m_pContent.frame.size.height)];
             }
             else
             {
                 NSInteger nWidth = nContentStringWith + nSpace * 2;
                 NSInteger nX = (kScreenWidth - nWidth) * 0.5f;
-                [_pRectangleView setFrame:CGRectMake(nX,
+                [m_pRectangleView setFrame:CGRectMake(nX,
                                                       viewHeight-108-45,
                                                       nWidth,
                                                       45)];
                 
-                [_pContent setFrame:CGRectMake(0,
+                [m_pContent setFrame:CGRectMake(0,
                                                 0,
-                                                _pRectangleView.frame.size.width,
-                                                _pContent.frame.size.height)];
+                                                m_pRectangleView.frame.size.width,
+                                                m_pContent.frame.size.height)];
             }
         }
             break;
         case PAProgressViewTypeActivityIndicatorViewAndString:
         {
-            [_pLoadingView startAnimating];
-            [_pLoadingView setHidden:NO];
+            [m_pLoadingView startAnimating];
+            [m_pLoadingView setHidden:NO];
             
 
             if (nContentStringWith <= 140)
             {
-                [_pRectangleView setFrame:CGRectMake((kScreenWidth - 180)/2,
+                [m_pRectangleView setFrame:CGRectMake((kScreenWidth - 180)/2,
                                                       viewHeight-108-45,
                                                       180,
                                                       45)];
                 
-                NSInteger nSumWidth = _pLoadingView.frame.size.width + nContentStringWith;
-                NSInteger nX = (_pRectangleView.frame.size.width - nSumWidth) * 0.5f;
+                NSInteger nSumWidth = m_pLoadingView.frame.size.width + nContentStringWith;
+                NSInteger nX = (m_pRectangleView.frame.size.width - nSumWidth) * 0.5f;
                 
-                [_pLoadingView setFrame:CGRectMake(nX,
-                                                    _pLoadingView.frame.origin.y,
-                                                    _pLoadingView.frame.size.width,
-                                                    _pLoadingView.frame.size.height)];
+                [m_pLoadingView setFrame:CGRectMake(nX,
+                                                    m_pLoadingView.frame.origin.y,
+                                                    m_pLoadingView.frame.size.width,
+                                                    m_pLoadingView.frame.size.height)];
                 
-                [_pContent setFrame:CGRectMake(_pLoadingView.frame.origin.x + _pLoadingView.frame.size.width + nSpace,
-                                                _pContent.frame.origin.y,
+                [m_pContent setFrame:CGRectMake(m_pLoadingView.frame.origin.x + m_pLoadingView.frame.size.width + nSpace,
+                                                m_pContent.frame.origin.y,
                                                 nContentStringWith,
-                                                _pContent.frame.size.height)];
+                                                m_pContent.frame.size.height)];
             }
             else
             {
-                NSInteger nWidth = nContentStringWith + _pLoadingView.frame.size.width + nSpace * 2;
+                NSInteger nWidth = nContentStringWith + m_pLoadingView.frame.size.width + nSpace * 2;
                 NSInteger nRectangleView_X = (kScreenWidth - nWidth) * 0.5f;
                 
-                [_pRectangleView setFrame:CGRectMake(nRectangleView_X,
+                [m_pRectangleView setFrame:CGRectMake(nRectangleView_X,
                                                       viewHeight-108-45,
                                                       nWidth,
                                                       45)];
                 
-                NSInteger nSumWidth = _pLoadingView.frame.size.width + nContentStringWith;
-                NSInteger nX = (_pRectangleView.frame.size.width - nSumWidth) * 0.5f;
+                NSInteger nSumWidth = m_pLoadingView.frame.size.width + nContentStringWith;
+                NSInteger nX = (m_pRectangleView.frame.size.width - nSumWidth) * 0.5f;
                 
-                [_pLoadingView setFrame:CGRectMake(nX,
-                                                    _pLoadingView.frame.origin.y,
-                                                    _pLoadingView.frame.size.width,
-                                                    _pLoadingView.frame.size.height)];
+                [m_pLoadingView setFrame:CGRectMake(nX,
+                                                    m_pLoadingView.frame.origin.y,
+                                                    m_pLoadingView.frame.size.width,
+                                                    m_pLoadingView.frame.size.height)];
                 
-                [_pContent setFrame:CGRectMake(_pLoadingView.frame.origin.x + _pLoadingView.frame.size.width,
-                                                _pContent.frame.origin.y,
+                [m_pContent setFrame:CGRectMake(m_pLoadingView.frame.origin.x + m_pLoadingView.frame.size.width,
+                                                m_pContent.frame.origin.y,
                                                 nContentStringWith,
-                                                _pContent.frame.size.height)];
+                                                m_pContent.frame.size.height)];
             }
         }
             break;
@@ -412,7 +419,7 @@
 
 - (void)updateProgressType:(PAProgressViewType)type
 {
-    _nCurrentProgressType = type;
+    m_nCurrentProgressType = type;
 }
 
 - (void)setContentString:(NSString *)contentString
@@ -429,7 +436,7 @@
 
 - (void)updateContentString:(NSString *)contentString
 {
-    [_pContent setText:contentString];
+    [m_pContent setText:contentString];
 }
 
 @end

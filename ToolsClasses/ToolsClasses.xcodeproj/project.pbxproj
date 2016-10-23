@@ -24,7 +24,7 @@
 		83AAC3541D36339800E5C890 /* CDHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AAC3531D36339800E5C890 /* CDHFileManager.m */; };
 		83CBA0841D43B01500813E2F /* CDHHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CBA0831D43B01500813E2F /* CDHHttpTool.m */; };
 		83CBA08B1D43B20400813E2F /* NSMutableURLRequest+CDHUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CBA08A1D43B20400813E2F /* NSMutableURLRequest+CDHUpload.m */; };
-		83D5AC4C1DBCE3A7003AFD94 /* PAProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D5AC4B1DBCE3A7003AFD94 /* PAProgressView.m */; };
+		83D5AC501DBCF8F6003AFD94 /* PAProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D5AC4F1DBCF8F6003AFD94 /* PAProgressView.m */; };
 		8E6B371A1D350EFD00954539 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37041D350EFD00954539 /* NSArray+Log.m */; };
 		8E6B371B1D350EFD00954539 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37061D350EFD00954539 /* NSDictionary+Log.m */; };
 		8E6B371C1D350EFD00954539 /* NSString+StringSizeWithFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B37091D350EFD00954539 /* NSString+StringSizeWithFont.m */; };
@@ -70,9 +70,9 @@
 		83CBA0831D43B01500813E2F /* CDHHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHHttpTool.m; sourceTree = "<group>"; };
 		83CBA0891D43B20400813E2F /* NSMutableURLRequest+CDHUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+CDHUpload.h"; sourceTree = "<group>"; };
 		83CBA08A1D43B20400813E2F /* NSMutableURLRequest+CDHUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+CDHUpload.m"; sourceTree = "<group>"; };
-		83D5AC4A1DBCE3A7003AFD94 /* PAProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAProgressView.h; sourceTree = "<group>"; };
-		83D5AC4B1DBCE3A7003AFD94 /* PAProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAProgressView.m; sourceTree = "<group>"; };
 		83D5AC4D1DBCE48B003AFD94 /* PCH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCH.h; sourceTree = "<group>"; };
+		83D5AC4E1DBCF8F6003AFD94 /* PAProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAProgressView.h; sourceTree = "<group>"; };
+		83D5AC4F1DBCF8F6003AFD94 /* PAProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAProgressView.m; sourceTree = "<group>"; };
 		8E6B37041D350EFD00954539 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		8E6B37061D350EFD00954539 /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
 		8E6B37081D350EFD00954539 /* NSString+StringSizeWithFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringSizeWithFont.h"; sourceTree = "<group>"; };
@@ -258,8 +258,8 @@
 		83D5AC491DBCE392003AFD94 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				83D5AC4A1DBCE3A7003AFD94 /* PAProgressView.h */,
-				83D5AC4B1DBCE3A7003AFD94 /* PAProgressView.m */,
+				83D5AC4E1DBCF8F6003AFD94 /* PAProgressView.h */,
+				83D5AC4F1DBCF8F6003AFD94 /* PAProgressView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -488,7 +488,7 @@
 				8E6B372B1D350F0E00954539 /* EncryptionTools.m in Sources */,
 				8E6B37201D350EFD00954539 /* UIImage+Image.m in Sources */,
 				8364B4221D5EBE48004F4A1A /* UIImage+GetColor.m in Sources */,
-				83D5AC4C1DBCE3A7003AFD94 /* PAProgressView.m in Sources */,
+				83D5AC501DBCF8F6003AFD94 /* PAProgressView.m in Sources */,
 				8E6B371A1D350EFD00954539 /* NSArray+Log.m in Sources */,
 				83AAC3541D36339800E5C890 /* CDHFileManager.m in Sources */,
 				8E6B371D1D350EFD00954539 /* UIBarButtonItem+CDHItem.m in Sources */,

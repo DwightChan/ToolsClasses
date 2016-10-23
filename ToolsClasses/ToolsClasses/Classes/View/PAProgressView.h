@@ -2,8 +2,8 @@
 //  PAProgressView.h
 //  PARockPay
 //
-//  Created by chendehao on 15/5/14
-//  Copyright (c) 2014年 dehao. All rights reserved.
+//  Created by Chen Jacky on 12-12-31.
+//  Copyright (c) 2012年 xyh. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -28,9 +28,9 @@ typedef enum
 
 @interface PAProgressView : UIView
 
-@property (nonatomic, assign) id<PAProgressViewDelegate>    delegate;
-@property (nonatomic, assign) PAProgressViewType            progressType;
-@property (nonatomic, copy) NSString                        *contentString;
+@property (nonatomic, assign) id                    delegate;
+@property (nonatomic, assign) PAProgressViewType    progressType;
+@property (nonatomic, copy) NSString                *contentString;
 
 
 + (PAProgressView *)showInView:(UIView *)view
