@@ -4,7 +4,7 @@
 //
 //  Created by Chen Jacky on 12-12-31.
 //  Copyright (c) 2012年 xyh. All rights reserved.
-//
+//  加载进度的 View
 
 #import <UIKit/UIKit.h>
 
