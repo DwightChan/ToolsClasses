@@ -19,6 +19,14 @@
 		8386D66F1D54DD6C00C7B98F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8386D66D1D54DD6C00C7B98F /* main.m */; };
 		838734C81E5DC4FD00C4E20A /* NSString+CDH_Class.m in Sources */ = {isa = PBXBuildFile; fileRef = 838734C51E5DC4FD00C4E20A /* NSString+CDH_Class.m */; };
 		838734C91E5DC4FD00C4E20A /* NSString+CDH_Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 838734C71E5DC4FD00C4E20A /* NSString+CDH_Object.m */; };
+		838734CE1E5DC60200C4E20A /* UIBarButtonItem+CDH_Class.m in Sources */ = {isa = PBXBuildFile; fileRef = 838734CB1E5DC60200C4E20A /* UIBarButtonItem+CDH_Class.m */; };
+		838734CF1E5DC60200C4E20A /* UIBarButtonItem+CDH_Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 838734CD1E5DC60200C4E20A /* UIBarButtonItem+CDH_Object.m */; };
+		838734D41E5DC60B00C4E20A /* UIColor+CDH_Class.m in Sources */ = {isa = PBXBuildFile; fileRef = 838734D11E5DC60B00C4E20A /* UIColor+CDH_Class.m */; };
+		838734D51E5DC60B00C4E20A /* UIColor+CDH_Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 838734D31E5DC60B00C4E20A /* UIColor+CDH_Object.m */; };
+		838734DA1E5DC61F00C4E20A /* UIImage+CDH_Class.m in Sources */ = {isa = PBXBuildFile; fileRef = 838734D71E5DC61F00C4E20A /* UIImage+CDH_Class.m */; };
+		838734DB1E5DC62000C4E20A /* UIImage+CDH_Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 838734D91E5DC61F00C4E20A /* UIImage+CDH_Object.m */; };
+		838734E11E5DC6CF00C4E20A /* UIView+CDH_Class.m in Sources */ = {isa = PBXBuildFile; fileRef = 838734E01E5DC6CF00C4E20A /* UIView+CDH_Class.m */; };
+		838734E41E5DC6FE00C4E20A /* UIView+CDH_Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 838734E31E5DC6FE00C4E20A /* UIView+CDH_Object.m */; };
 		839106721D369EC5008A093B /* UIView+CDHFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 839106711D369EC5008A093B /* UIView+CDHFrame.m */; };
 		839106821D37B144008A093B /* UITextField+CDHPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 839106811D37B144008A093B /* UITextField+CDHPlaceholder.m */; };
 		83AAC3541D36339800E5C890 /* CDHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AAC3531D36339800E5C890 /* CDHFileManager.m */; };
@@ -57,6 +65,22 @@
 		838734C51E5DC4FD00C4E20A /* NSString+CDH_Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CDH_Class.m"; sourceTree = "<group>"; };
 		838734C61E5DC4FD00C4E20A /* NSString+CDH_Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CDH_Object.h"; sourceTree = "<group>"; };
 		838734C71E5DC4FD00C4E20A /* NSString+CDH_Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CDH_Object.m"; sourceTree = "<group>"; };
+		838734CA1E5DC60200C4E20A /* UIBarButtonItem+CDH_Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CDH_Class.h"; sourceTree = "<group>"; };
+		838734CB1E5DC60200C4E20A /* UIBarButtonItem+CDH_Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CDH_Class.m"; sourceTree = "<group>"; };
+		838734CC1E5DC60200C4E20A /* UIBarButtonItem+CDH_Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CDH_Object.h"; sourceTree = "<group>"; };
+		838734CD1E5DC60200C4E20A /* UIBarButtonItem+CDH_Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CDH_Object.m"; sourceTree = "<group>"; };
+		838734D01E5DC60B00C4E20A /* UIColor+CDH_Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CDH_Class.h"; sourceTree = "<group>"; };
+		838734D11E5DC60B00C4E20A /* UIColor+CDH_Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CDH_Class.m"; sourceTree = "<group>"; };
+		838734D21E5DC60B00C4E20A /* UIColor+CDH_Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CDH_Object.h"; sourceTree = "<group>"; };
+		838734D31E5DC60B00C4E20A /* UIColor+CDH_Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CDH_Object.m"; sourceTree = "<group>"; };
+		838734D61E5DC61F00C4E20A /* UIImage+CDH_Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CDH_Class.h"; sourceTree = "<group>"; };
+		838734D71E5DC61F00C4E20A /* UIImage+CDH_Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CDH_Class.m"; sourceTree = "<group>"; };
+		838734D81E5DC61F00C4E20A /* UIImage+CDH_Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CDH_Object.h"; sourceTree = "<group>"; };
+		838734D91E5DC61F00C4E20A /* UIImage+CDH_Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CDH_Object.m"; sourceTree = "<group>"; };
+		838734DF1E5DC6CF00C4E20A /* UIView+CDH_Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CDH_Class.h"; sourceTree = "<group>"; };
+		838734E01E5DC6CF00C4E20A /* UIView+CDH_Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CDH_Class.m"; sourceTree = "<group>"; };
+		838734E21E5DC6FE00C4E20A /* UIView+CDH_Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CDH_Object.h"; sourceTree = "<group>"; };
+		838734E31E5DC6FE00C4E20A /* UIView+CDH_Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CDH_Object.m"; sourceTree = "<group>"; };
 		839106701D369EC5008A093B /* UIView+CDHFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CDHFrame.h"; sourceTree = "<group>"; };
 		839106711D369EC5008A093B /* UIView+CDHFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CDHFrame.m"; sourceTree = "<group>"; };
 		839106801D37B144008A093B /* UITextField+CDHPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CDHPlaceholder.h"; sourceTree = "<group>"; };
@@ -310,6 +334,10 @@
 		8E6B370A1D350EFD00954539 /* UIBarButtonItem */ = {
 			isa = PBXGroup;
 			children = (
+				838734CA1E5DC60200C4E20A /* UIBarButtonItem+CDH_Class.h */,
+				838734CB1E5DC60200C4E20A /* UIBarButtonItem+CDH_Class.m */,
+				838734CC1E5DC60200C4E20A /* UIBarButtonItem+CDH_Object.h */,
+				838734CD1E5DC60200C4E20A /* UIBarButtonItem+CDH_Object.m */,
 			);
 			path = UIBarButtonItem;
 			sourceTree = "<group>";
@@ -319,6 +347,10 @@
 			children = (
 				8E6B370E1D350EFD00954539 /* UIColor+Hex.h */,
 				8E6B370F1D350EFD00954539 /* UIColor+Hex.m */,
+				838734D01E5DC60B00C4E20A /* UIColor+CDH_Class.h */,
+				838734D11E5DC60B00C4E20A /* UIColor+CDH_Class.m */,
+				838734D21E5DC60B00C4E20A /* UIColor+CDH_Object.h */,
+				838734D31E5DC60B00C4E20A /* UIColor+CDH_Object.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -326,6 +358,10 @@
 		8E6B37101D350EFD00954539 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
+				838734D61E5DC61F00C4E20A /* UIImage+CDH_Class.h */,
+				838734D71E5DC61F00C4E20A /* UIImage+CDH_Class.m */,
+				838734D81E5DC61F00C4E20A /* UIImage+CDH_Object.h */,
+				838734D91E5DC61F00C4E20A /* UIImage+CDH_Object.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -335,6 +371,10 @@
 			children = (
 				839106701D369EC5008A093B /* UIView+CDHFrame.h */,
 				839106711D369EC5008A093B /* UIView+CDHFrame.m */,
+				838734DF1E5DC6CF00C4E20A /* UIView+CDH_Class.h */,
+				838734E01E5DC6CF00C4E20A /* UIView+CDH_Class.m */,
+				838734E21E5DC6FE00C4E20A /* UIView+CDH_Object.h */,
+				838734E31E5DC6FE00C4E20A /* UIView+CDH_Object.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -381,11 +421,13 @@
 		834D61C31D2DFFA500E864E5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CDH_;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = "陈德豪";
+				ORGANIZATIONNAME = DwightChan;
 				TargetAttributes = {
 					834D61CA1D2DFFA500E864E5 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 888LX5PF5J;
 					};
 				};
 			};
@@ -474,6 +516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838734E11E5DC6CF00C4E20A /* UIView+CDH_Class.m in Sources */,
 				839106821D37B144008A093B /* UITextField+CDHPlaceholder.m in Sources */,
 				8E6B372B1D350F0E00954539 /* EncryptionTools.m in Sources */,
 				83D5AC501DBCF8F6003AFD94 /* PAProgressView.m in Sources */,
@@ -484,16 +527,23 @@
 				838734C81E5DC4FD00C4E20A /* NSString+CDH_Class.m in Sources */,
 				83CBA08B1D43B20400813E2F /* NSMutableURLRequest+CDHUpload.m in Sources */,
 				834099901D7835B3000FA95D /* CDHInfiniteScrollView.m in Sources */,
+				838734E41E5DC6FE00C4E20A /* UIView+CDH_Object.m in Sources */,
 				83FA19151DC1019A0071FEA1 /* UIImageView+CDHDowdload.m in Sources */,
 				833B22051D2EBA38009C8087 /* ViewController.m in Sources */,
+				838734D51E5DC60B00C4E20A /* UIColor+CDH_Object.m in Sources */,
 				8E6B372C1D350F0E00954539 /* NSString+Hash.m in Sources */,
 				839106721D369EC5008A093B /* UIView+CDHFrame.m in Sources */,
+				838734D41E5DC60B00C4E20A /* UIColor+CDH_Class.m in Sources */,
 				8E6B371B1D350EFD00954539 /* NSDictionary+Log.m in Sources */,
 				8E6B371E1D350EFD00954539 /* UIColor+Hex.m in Sources */,
 				83CBA0841D43B01500813E2F /* CDHHttpTool.m in Sources */,
 				8340998E1D7835B3000FA95D /* CDHImageCell.m in Sources */,
+				838734DB1E5DC62000C4E20A /* UIImage+CDH_Object.m in Sources */,
 				8386D66F1D54DD6C00C7B98F /* main.m in Sources */,
 				8386D66E1D54DD6C00C7B98F /* AppDelegate.m in Sources */,
+				838734DA1E5DC61F00C4E20A /* UIImage+CDH_Class.m in Sources */,
+				838734CE1E5DC60200C4E20A /* UIBarButtonItem+CDH_Class.m in Sources */,
+				838734CF1E5DC60200C4E20A /* UIBarButtonItem+CDH_Object.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +662,7 @@
 			baseConfigurationReference = 969CC9B9BFE2A497C62AE21D /* Pods-ToolsClasses.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 888LX5PF5J;
 				GCC_PREFIX_HEADER = ToolsClasses/Classes/Others/PCH.h;
 				INFOPLIST_FILE = ToolsClasses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -625,6 +676,7 @@
 			baseConfigurationReference = 164873D83F48200BA0C0E20F /* Pods-ToolsClasses.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 888LX5PF5J;
 				GCC_PREFIX_HEADER = ToolsClasses/Classes/Others/PCH.h;
 				INFOPLIST_FILE = ToolsClasses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
