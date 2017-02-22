@@ -2,8 +2,8 @@
 //  UIColor+Hex.m
 //  颜色常识
 //
-//  Created by yz on 15/12/15.
-//  Copyright © 2015年 yz. All rights reserved.
+//  Created by 陈德豪 on 15/12/15.
+//  Copyright © 2015年 DwightChan. All rights reserved.
 //
 
 #import "UIColor+Hex.h"

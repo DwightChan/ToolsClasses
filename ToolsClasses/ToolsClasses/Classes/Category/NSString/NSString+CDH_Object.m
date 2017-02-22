@@ -1,19 +1,32 @@
 //
-//  NSString+StringSizeWithFont.h
-//  15-自定义不等高的cell-纯代码-frame01-
+//  NSString+CDH_Object.m
+//  ToolsClasses
 //
-//  Created by 陈德豪 on 16/7/2.
-//  Copyright © 2016年 chendehao. All rights reserved.
+//  Created by 陈德豪 on 2017/2/22.
+//  Copyright © 2017年 DwightChan. All rights reserved.
 //
 
-#import "NSString+StringSizeWithFont.h"
+#import "NSString+CDH_Object.h"
 
+@implementation NSString (CDH_Object)
 
-@implementation NSString (StringSizeWithFont)
+#pragma mark - 根据名称找到图片并做拉伸
+- (UIImage *)cdh_imageResizingWithNamed {
 
+    // 1.创建图片对象
+    UIImage *image = [UIImage imageNamed:self];
+    // 2.创建可拉伸的图片
+    CGFloat imageW = image.size.width * 0.5;
+    CGFloat imageH = image.size.height * 0.5;
+    image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(imageH, imageW, imageH, imageW)];
+    //    image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(imageH , imageW , imageH, imageW) resizingMode:UIImageResizingModeTile];
+    return image;
+}
+
+#pragma mark -  计算字符串的尺寸
 /// 计算字符串的尺寸大小
-- (CGSize)sizeWithMyFont:(UIFont *)font {
-
+- (CGSize)cdh_sizeWithMyFont:(UIFont *)font {
+    
     if ([self respondsToSelector:@selector(sizeWithAttributes:)])
     {
         NSDictionary* attribs = @{NSFontAttributeName:font};
@@ -23,11 +36,11 @@
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
     return ([self sizeWithFont:font]);
 #pragma clang diagnostic pop
-    }
+}
 
 /// 文本的尺寸大小
-- (CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize{
-
+- (CGSize)cdh_sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize{
+    
     // 如果没有字体大小则直接默认是 14 号字体
     if (!font){
         font =[UIFont systemFontOfSize:14];
@@ -37,7 +50,7 @@
 }
 
 /// 文本的尺寸大小
-- (CGSize)sizeWithFont:(UIFont *)font maxWidth:(CGFloat)maxWidth{
+- (CGSize)cdh_sizeWithFont:(UIFont *)font maxWidth:(CGFloat)maxWidth{
     
     // 如果没有字体大小则直接默认是 14 号字体
     if (!font){

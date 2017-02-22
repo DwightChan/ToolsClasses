@@ -14,9 +14,7 @@
 + (void)load
 {
     Method setPlaceholderMethod = class_getInstanceMethod(self, @selector(setPlaceholder:));
-    
     Method setCDHPlaceholderMethod = class_getInstanceMethod(self, @selector(setCDH_Placeholder:));
-    
     method_exchangeImplementations(setPlaceholderMethod, setCDHPlaceholderMethod);
 }
 

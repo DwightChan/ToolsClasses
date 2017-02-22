@@ -2,7 +2,7 @@
 //  UIColor+Hex.h
 //  颜色常识
 //
-//  Created by chendehao on 15/12/15.
+//  Created by 陈德豪 on 15/12/15.
 //  Copyright © 2015年 chendehao. All rights reserved.
 //
 
