@@ -12,6 +12,8 @@
 		8340998E1D7835B3000FA95D /* CDHImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8340998A1D7835B3000FA95D /* CDHImageCell.m */; };
 		8340998F1D7835B3000FA95D /* CDHImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8340998B1D7835B3000FA95D /* CDHImageCell.xib */; };
 		834099901D7835B3000FA95D /* CDHInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8340998D1D7835B3000FA95D /* CDHInfiniteScrollView.m */; };
+		834337CA1E642A540044DBAB /* NSNumber+String.m in Sources */ = {isa = PBXBuildFile; fileRef = 834337C91E642A540044DBAB /* NSNumber+String.m */; };
+		834337CD1E642A5A0044DBAB /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 834337CC1E642A5A0044DBAB /* NSObject+Runtime.m */; };
 		834D61D91D2DFFA600E864E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61D71D2DFFA600E864E5 /* Main.storyboard */; };
 		834D61DB1D2DFFA600E864E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DA1D2DFFA600E864E5 /* Assets.xcassets */; };
 		834D61DE1D2DFFA600E864E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834D61DC1D2DFFA600E864E5 /* LaunchScreen.storyboard */; };
@@ -52,6 +54,10 @@
 		8340998B1D7835B3000FA95D /* CDHImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CDHImageCell.xib; sourceTree = "<group>"; };
 		8340998C1D7835B3000FA95D /* CDHInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHInfiniteScrollView.h; sourceTree = "<group>"; };
 		8340998D1D7835B3000FA95D /* CDHInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDHInfiniteScrollView.m; sourceTree = "<group>"; };
+		834337C81E642A540044DBAB /* NSNumber+String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+String.h"; sourceTree = "<group>"; };
+		834337C91E642A540044DBAB /* NSNumber+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+String.m"; sourceTree = "<group>"; };
+		834337CB1E642A5A0044DBAB /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		834337CC1E642A5A0044DBAB /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
 		834D61CB1D2DFFA500E864E5 /* ToolsClasses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolsClasses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834D61D81D2DFFA600E864E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		834D61DA1D2DFFA600E864E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -182,6 +188,24 @@
 			path = CDHInfiniteScrollView;
 			sourceTree = "<group>";
 		};
+		834337C61E642A4C0044DBAB /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				834337C81E642A540044DBAB /* NSNumber+String.h */,
+				834337C91E642A540044DBAB /* NSNumber+String.m */,
+			);
+			path = NSNumber;
+			sourceTree = "<group>";
+		};
+		834337C71E642A4C0044DBAB /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				834337CB1E642A5A0044DBAB /* NSObject+Runtime.h */,
+				834337CC1E642A5A0044DBAB /* NSObject+Runtime.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
 		834D61C21D2DFFA500E864E5 = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +314,8 @@
 		8E6B37021D350EFD00954539 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				834337C61E642A4C0044DBAB /* NSNumber */,
+				834337C71E642A4C0044DBAB /* NSObject */,
 				83CBA0851D43B1A700813E2F /* NSMutableURLRequest */,
 				8391067F1D37B144008A093B /* UITestField */,
 				8E6B37031D350EFD00954539 /* NSArray */,
@@ -541,6 +567,8 @@
 				838734DB1E5DC62000C4E20A /* UIImage+CDH_Object.m in Sources */,
 				8386D66F1D54DD6C00C7B98F /* main.m in Sources */,
 				8386D66E1D54DD6C00C7B98F /* AppDelegate.m in Sources */,
+				834337CA1E642A540044DBAB /* NSNumber+String.m in Sources */,
+				834337CD1E642A5A0044DBAB /* NSObject+Runtime.m in Sources */,
 				838734DA1E5DC61F00C4E20A /* UIImage+CDH_Class.m in Sources */,
 				838734CE1E5DC60200C4E20A /* UIBarButtonItem+CDH_Class.m in Sources */,
 				838734CF1E5DC60200C4E20A /* UIBarButtonItem+CDH_Object.m in Sources */,
