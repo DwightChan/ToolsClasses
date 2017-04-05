@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		074B6346D676214D5D7E5546 /* libPods-ToolsClasses.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB1A75EB5593490B4174C03 /* libPods-ToolsClasses.a */; };
+		832E9B751E94C6C000578CB3 /* NSFileManager+CDH_Class.m in Sources */ = {isa = PBXBuildFile; fileRef = 832E9B721E94C6C000578CB3 /* NSFileManager+CDH_Class.m */; };
+		832E9B761E94C6C000578CB3 /* NSFileManager+CDH_Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 832E9B741E94C6C000578CB3 /* NSFileManager+CDH_Object.m */; };
 		833B22051D2EBA38009C8087 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 833B22041D2EBA38009C8087 /* ViewController.m */; };
 		8340998E1D7835B3000FA95D /* CDHImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8340998A1D7835B3000FA95D /* CDHImageCell.m */; };
 		8340998F1D7835B3000FA95D /* CDHImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8340998B1D7835B3000FA95D /* CDHImageCell.xib */; };
@@ -47,6 +49,10 @@
 /* Begin PBXFileReference section */
 		164873D83F48200BA0C0E20F /* Pods-ToolsClasses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolsClasses.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToolsClasses/Pods-ToolsClasses.release.xcconfig"; sourceTree = "<group>"; };
 		1EB1A75EB5593490B4174C03 /* libPods-ToolsClasses.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToolsClasses.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		832E9B711E94C6C000578CB3 /* NSFileManager+CDH_Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+CDH_Class.h"; sourceTree = "<group>"; };
+		832E9B721E94C6C000578CB3 /* NSFileManager+CDH_Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+CDH_Class.m"; sourceTree = "<group>"; };
+		832E9B731E94C6C000578CB3 /* NSFileManager+CDH_Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+CDH_Object.h"; sourceTree = "<group>"; };
+		832E9B741E94C6C000578CB3 /* NSFileManager+CDH_Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+CDH_Object.m"; sourceTree = "<group>"; };
 		833B22031D2EBA38009C8087 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		833B22041D2EBA38009C8087 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		834099891D7835B3000FA95D /* CDHImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDHImageCell.h; sourceTree = "<group>"; };
@@ -142,6 +148,17 @@
 				1EB1A75EB5593490B4174C03 /* libPods-ToolsClasses.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832E9B701E94C6C000578CB3 /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				832E9B711E94C6C000578CB3 /* NSFileManager+CDH_Class.h */,
+				832E9B721E94C6C000578CB3 /* NSFileManager+CDH_Class.m */,
+				832E9B731E94C6C000578CB3 /* NSFileManager+CDH_Object.h */,
+				832E9B741E94C6C000578CB3 /* NSFileManager+CDH_Object.m */,
+			);
+			path = NSFileManager;
 			sourceTree = "<group>";
 		};
 		833B215F1D2E9AA7009C8087 /* Classes */ = {
@@ -314,6 +331,7 @@
 		8E6B37021D350EFD00954539 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				832E9B701E94C6C000578CB3 /* NSFileManager */,
 				834337C61E642A4C0044DBAB /* NSNumber */,
 				834337C71E642A4C0044DBAB /* NSObject */,
 				83CBA0851D43B1A700813E2F /* NSMutableURLRequest */,
@@ -543,6 +561,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				838734E11E5DC6CF00C4E20A /* UIView+CDH_Class.m in Sources */,
+				832E9B761E94C6C000578CB3 /* NSFileManager+CDH_Object.m in Sources */,
 				839106821D37B144008A093B /* UITextField+CDHPlaceholder.m in Sources */,
 				8E6B372B1D350F0E00954539 /* EncryptionTools.m in Sources */,
 				83D5AC501DBCF8F6003AFD94 /* PAProgressView.m in Sources */,
@@ -569,6 +588,7 @@
 				8386D66E1D54DD6C00C7B98F /* AppDelegate.m in Sources */,
 				834337CA1E642A540044DBAB /* NSNumber+String.m in Sources */,
 				834337CD1E642A5A0044DBAB /* NSObject+Runtime.m in Sources */,
+				832E9B751E94C6C000578CB3 /* NSFileManager+CDH_Class.m in Sources */,
 				838734DA1E5DC61F00C4E20A /* UIImage+CDH_Class.m in Sources */,
 				838734CE1E5DC60200C4E20A /* UIBarButtonItem+CDH_Class.m in Sources */,
 				838734CF1E5DC60200C4E20A /* UIBarButtonItem+CDH_Object.m in Sources */,
